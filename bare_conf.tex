@@ -52,6 +52,14 @@
 
 
 \documentclass[conference]{IEEEtran}
+
+
+
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{caption}
+
 % Some Computer Society conferences also require the compsoc mode option,
 % but others use the standard conference format.
 %
@@ -320,7 +328,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Distributed Online Training Simulation for Railway Dispatcher}
+\title{Distributed Online Training Simulation for Railway Dispatcher }
 
 
 % author names and affiliations
@@ -380,146 +388,206 @@ experiences, classroom management, and responses to
 individual students. The user is able to monitor and track the progress of five targeted students throughout the course of the simulation. 
 \end{abstract}
 
-% no keywords
+\section{INTRODUCTION}
 
-
-
-
-% For peer review papers, you can put extra information on the cover
-% page as needed:
-% \ifCLASSOPTIONpeerreview
-% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
-% \fi
-%
-% For peerreview papers, this IEEEtran command inserts a page break and
-% creates the second title. It will be ignored for other modes.
-\IEEEpeerreviewmaketitle
-
-
-
-\section{Introduction}
-% no \IEEEPARstart
-
-Computer simulations provide a method for checking our understanding of the real world by modelling the structure and dynamics of a conceptual system or a real environment. They facilitate interactive practice of real-world skills by focusing on essential elements of a real problem or system
-
-
-% You must have at least 2 lines in the paragraph with the drop letter
-% (should never be an issue)
-I wish you the best of success.
-
-
-
-\subsection{Subsection Heading Here}
-Subsection text here.
-
-
-\subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
-
-
-% An example of a floating figure using the graphicx package.
-% Note that \label must occur AFTER (or within) \caption.
-% For figures, \caption should occur after the \includegraphics.
-% Note that IEEEtran v1.7 and later has special internal code that
-% is designed to preserve the operation of \label within \caption
-% even when the captionsoff option is in effect. However, because
-% of issues like this, it may be the safest practice to put all your
-% \label just after \caption rather than within \caption{}.
-%
-% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
-% option should be used if it is desired that the figures are to be
-% displayed while in draft mode.
-%
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=2.5in]{myfigure}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-%\caption{Simulation results for the network.}
-%\label{fig_sim}
-%\end{figure}
-
-% Note that the IEEE typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats.
-
-
-% An example of a double column floating figure using two subfigures.
-% (The subfig.sty package must be loaded for this to work.)
-% The subfigure \label commands are set within each subfloat command,
-% and the \label for the overall figure must come after \caption.
-% \hfil is used as a separator to get equal spacing.
-% Watch out that the combined width of all the subfigures on a 
-% line do not exceed the text width or a line break will occur.
-%
-%\begin{figure*}[!t]
-%\centering
-%\subfloat[Case I]{\includegraphics[width=2.5in]{box}%
-%\label{fig_first_case}}
-%\hfil
-%\subfloat[Case II]{\includegraphics[width=2.5in]{box}%
-%\label{fig_second_case}}
-%\caption{Simulation results for the network.}
-%\label{fig_sim}
-%\end{figure*}
-%
-% Note that often IEEE papers with subfigures do not employ subfigure
-% captions (using the optional argument to \subfloat[]), but instead will
-% reference/describe all of them (a), (b), etc., within the main caption.
-% Be aware that for subfig.sty to generate the (a), (b), etc., subfigure
-% labels, the optional argument to \subfloat must be present. If a
-% subcaption is not desired, just leave its contents blank,
-% e.g., \subfloat[].
-
-
-% An example of a floating table. Note that, for IEEE style tables, the
-% \caption command should come BEFORE the table and, given that table
-% captions serve much like titles, are usually capitalized except for words
-% such as a, an, and, as, at, but, by, for, in, nor, of, on, or, the, to
-% and up, which are usually not capitalized unless they are the first or
-% last word of the caption. Table text will default to \footnotesize as
-% the IEEE normally uses this smaller font for tables.
-% The \label must come after \caption as always.
-%
-%\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-%\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-%\caption{An Example of a Table}
-%\label{table_example}
-%\centering
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-%\begin{tabular}{|c||c|}
-%\hline
-%One & Two\\
-%\hline
-%Three & Four\\
-%\hline
-%\end{tabular}
-%\end{table}
-
-
-% Note that the IEEE does not put floats in the very first column
-% - or typically anywhere on the first page for that matter. Also,
-% in-text middle ("here") positioning is typically not used, but it
-% is allowed and encouraged for Computer Society conferences (but
-% not Computer Society journals). Most IEEE journals/conferences use
-% top floats exclusively. 
-% Note that, LaTeX2e, unlike IEEE journals/conferences, places
-% footnotes above bottom floats. This can be corrected via the
-% \fnbelowfloat command of the stfloats package.
 
 
 \section{RELATED WORK}
 The conclusion goes here.
 
 \section{SYSTEM DESIGN}
-The conclusion goes here.
+\subsection{Simülasyon Yaşam Döngüsü}
+
+RAYTES sistemi beş bağımsız simülasyon ortamını eşzamanlı ve birbirinden bağımsız olarak yürütebilmektedir. Aşağıdaki gösterilen Şekil 8 deki yaşam döngüsü bir simülasyon ortamını temsil etmektedir. Sistem ilk çalıştırıldğında IDLE durumda bulunmaktadır. Bir senaryo sisteme yüklenerek simülasyon oturumu oluşturulduğunda LOADED durumuna geçilir. Bu durumda simülasyon başlangiç saatinde beklemekte olup, çalışmaya hazır haldedir. Simülasyon çalıştırıldığında RUNNING durumuna geçer, simülasyon saati ilerlemekte, simüle edilen nesneler zamana duyarlı biçimde işlenir, ve insan arayüzlerinde sistem ile kullanıcılar arası etkileşim gerçeklenmektedir. PAUSE durumunda simülasyon saati ve simülasyon işlemler geçici olarak durdurulur. PAUSE durumunda yine simülasyon RUNNING durumuna başlayabilir. Simülasyon sonlandırıldığında TERMINATED durumuna düşer ve simülasyon artık yeniden başlatılamaz.
+
+
+
+
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{simyasamdongusu.jpg}
+  \caption{Representation of Simulation Life cycle}\label{fig:smclass}
+\end{figure}
+
+\subsection{Comminication}
+\subsubsection{ Simulation Message}
+Simulation Message mesaj türü simülasyon sistemin üst seviye kumanda ve kontrol mesajlaşma türüdür. Bu mesajlar Eğitmen Konsolu’nda üretilmektedir ve sistemin diğer bileşenlerine gönderilmektedir. Simülasyon’un yaratılması, duraklatılması, snapshot alınması, gibi temel simülasyon komutlar içermektedir. Ayrıca simülasyondaki sanal saha nesnelerinin durumlarına müdahale etmek amacıyla bir takım özel müdahale komutlar tanımlıdır. Mesaj komutları Tablo 1 de verilmektedir.
+\subsubsection{Request Message}
+RequestMessage mesaj türü Kontrol Merkezi Client (KMC) modülünün Kontrol Merkezi Sunucu (KMS) modülüne gönderilen komutları taşımaktadır. KMC ve KMS arasındaki protokol “client-server” mimarisi olup RequestMessage komutları istemci tarafın sunucu tarafından hizmet isteği olarak değerlendirilmektedir. RequestMessage komutları de listelenmektedir.
+
+\subsubsection{State Message}
+
+StateMessage mesajlar simülasyon çalışması esnasında sanal saha daki tanımlı elemanların durum bilgilerinin iletilmesi için kullanılmaktadır. Kontrol Merkezi Sunucu (KMS) modülü StateMessage kullanlarak Kontrol Merkezi Client (KMC) modülüne saha bilgilerini göndermektedir. Kontrol Merkezi Sunucu ayriyetten saha görüntüleme ihtiyacı duyan Geniş Ekran Konsolu (GEK) ve Eğitmen Saha Müdahale (ESM) modüllerine de StateMessage vasıtasıyla bilgi göndermektedir.
+
+\subsubsection{System Message}
+SystemMessage mesajlar Öğrenci Kontrol Yönetimi (ÖKY) ile Kontrol Merkezi Sunucu (KMS) modüller arası kullanılan mesajlaşmadır. Bu mesaj türü öğrenci kullanıcıların eğitim sistemine giriş (login) sağlamakta kullanılmaktadır.
+
+\subsection{Modbus}
+Modbus otomasyon senayi çevrelerinde kabul görmüş bir ham veri iletişim protokolu. Bu protokol “client-server” mantığında çalışıp sistemler arası bit dizilerin sorgulanması ve iletilmesinde kullanılmaktadır. RAYTES projesinde Modbus paketler UDP/IP üzerinden yazılım modülünden modüle iletilmektedir. Kontrol Merkezi Sunucu (KMS) modülü, Anklaşman Simülatör (AS) modülü, Saha Simülatör (SS) modülü ve Tren Simülatör (TS) modüller arası komut ve bilge transferi Modbus paketler ile gerçekleşmektedir.
+
+
+\subsection{SSY Simülasyon Sunucu Yönetim Modülü}
+SSY yani Simülasyon Sunucu Yönetim modülü simülasyon sistemi içerisindeki tüm aktif modüllerin bağlı olduğu haberleşme altyapısının ve koordinasyonun sağlandığı modüldür.
+Simülasyon akışı içerisinde doğrudan bir görevle sorumlu tüm aktif modüller bu modüle ya doğrudan ya da altında çalıştıkları ana modül üzerinden dolaylı olarak bağlı olmak zorundadır. Simülasyonun çalışması ve hazırlanması esnasında gerçekleşen tüm mesajlaşmalar bu modül üzerinden gerçekleşmektedir.
+SSY ayrıca sistemdeki aktif konsollar gibi kendi içerisindeki bilgileri uygun mesajlara karşılık olarak diğer konsollarla yada uygulamalarla paylaşabilmektedir.
+SSY mesajlaşma amacıyla tüm sistem elemanları gibi SD yani Simülasyon Destek ve Mesajlaşama Modülü’nü kullanmaktadır. Bu birim tüm giriş bilgilerini SD üzerin almakta olup yine çıkış bilgilerini de SD üzerinden sisteme dağıtmaktadır. SD bu SSY üzerinde Mesaj Sunucu görevi ile tanımlanmış olarak kullanılmaktadır.
+SSY üzerine gelen herbir mesaj bir ön kontrolden geçirilerek mesaj ile ilgili yapılması gereken işleme karar verilir. SSY’nin bir mesaj üzerine yapacağı 4 işlem vardır;
+
+\begin{itemize}
+\item Mesajı doğrudan hedef ya da hedeflerine göndermek
+\item Mesajı tüm ağa yayınlamak
+\item Mesajın içeriği SSY ile ilgili ise SSY’den doğrudan cevap mesajı yollamak
+\item Mesajın hiyerarşik olarak göderilmesi gerekiyorsa bu hiyerarşinin sağlanması
+\end{itemize}
+
+
+
+
+
+
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{syysquenceDiagram.jpg}
+  \caption{Representation of SYY squence diagram}\label{fig:smclass}
+\end{figure}
+
+
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{syygrafic.jpg}
+  \caption{Representation of SYY class diagram}\label{fig:smclass}
+\end{figure}
+
+
+
+
+Hiyerarşik mesaj gönderimi bir mesajın, örneğin simülasyon yükleme mesajının öncelik sırasına göre her bir birime yollanması anlamına gelmektedir. Sıra ile yollanan her bir mesaj sonrasında olumlu cevap gelmesi durumunda bir sonraki ilgili birime mesaj iletilir. Bu zincir bir noktada kırılırsa sistem mesajı gönderen ilk birime olumsuz mesajı döndürür. Eğer mesaj zinciri tamamlanırsa olumlu mesajı iletilir.
+
+\subsection{SM Simülasyon Motor Modülü}
+\subsubsection{Sınıf Yapısı}
+Simülasyon Motoru (SM) modülündeki ana sınıf SimMotor sınıfıdır. Bu sınıf Config, XmlUtility, SahaEventList, FTSimManager::FTSimMgr ve Communicator::Client sınıfları bünyesinde yaratıp kullanmaktadır. FTSimMgr Saha Trafik Simülasyon Yönetimi (FTS) modülünde tanımlıdır. SimMotor sınıfı FTSimMgr sınıfın sağladığı arayüz üzerinden anklaşman, saha ve trafik simülasyon modellerinde erişmektedir. Communicator modüllünde tanımlı Client sınıfı ise SimMotor sınıfına SimulationMessage mesajlaşma arayüz sağlamaktadır. SimMotorGui, SimMotor sınıfa debug ve test maksatlı grafik pencere arayüzü sağlamaktadır.
+
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{smgrafic.jpg}
+  \caption{Representation of SM class diagram}\label{fig:smclass}
+\end{figure}
+
+
+
+\subsubsection{Mesajlaşma}
+Simülasyon Sunucu Yönetimi (SSY) ilk başladığında 5 adet bağımsız Simülasyon Motoru (SM) proses yaratır. Bu SM proses’ler sayesinde 5 bağımsız simülasyon eşzamanlı olarak SSY tarafından kontrol edilmesine olanak sağlar. SSY SimulasyonMessage tür mesajarı SM ye aktarmaktadır. Bu tür mesajlar, simülasyon yükle, sümülasyon başlat tarzında üst seviye kontrol mesajlardır. SM bu mesajları Saha Trafik Yönetimi (FTS) simülasyon modüllerine iletmektedir. Simülasyon modülü bu mesajların gerektirdiği işlemleri tamamladığında SM’ye yanıt (olumlu veya olumsuz) vermektedir ve bu netice SSY ye geri bildirilmektedir.
+LoadSimulation mesajı genel örnek olarak ele alınırsa; bu mesaj SM tarafından alındığında iki işlem tetiklemektedir. Birincisi, senaryo da oynatılması gereken önceden programlanmış olaylar veritabanından okunuyor ve Saha Event List (SEL) listesine yüklenmektedir. Bu olayların her biri bir Saha Event (SE) olarak tanımlanmıştır. 
+İkinci işlem ise FTS ve onun bünyesindeki Saha Simülasyon (SS) modeli, Anklaşman Simülasyon (AS) modeli ve Trafik Simülasyon (TS) modelini ilgili senaryonun teknik parametrelerini veritabanından yüklemesi ve simülasyon başlatma durumu için hazırlanması.
+Simülasyon Running durumundayken SEL deki sıralanmış SE olaylar simülasyon zamanına göre FTS modülüne işlenmek için aktarılmaktadır. Bu mekanizma bir senaryonun müdahalesiz olarak işlenmesini sağlamaktadır. Ancak bir simülasyon ayrıca eğitmen tarafından müdahale edilmesine izin vermektedir. Eğitimen, Eğitmen Saha Müdahale (ESM) aracı kullanarak manuel Saha Event yaratabilir. Bu manuel olarak yaratılan SE olaylar SM’ye anlık olarak iletdiğinde SE olayı SEL listesinin başına eklemektedir ve böylelikle simülasyon’un sonraki çevriminde hemen işlenmesi sağlanmaktadır.
+
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{smcom.jpg}
+  \caption{Representation of SM Comminication diagram}\label{fig:smclass}
+\end{figure}
+
+\subsubsection{SD Simülasyon Destek ve Mesajlaşma Modülü}
+
+Simülasyon Destek ve Mesajlaşma modülü proje içerisinde birbirinden fiziksel olarak bağımsız fakat haberleşme ve etkileşim içinde olan birimlerin birbirleri ile olan haberleşmesini sağlamaktadır.
+Temel sunucu istemci mimarisi üzerine kurulmuş haberleşme modülü projeye özgü bağlantı kopukluğu kontrolü, tekil bağlantı özelliği, XML tabanlı mesaj kontrolü gibi özellikler eklenerek projeye özgü protokol kuralları çerçevesinde tasarlanmıştır.
+Mesajlaşma ve iletişimi sağlayacak olan ana modül iki modda çalışabilmektedir. Bu modalardan ilki Server yani sunucu mod iken diğer mod ise Client yani istemci modüldür. Sunucu modda çalıştırıldığında belirli bir bağlatı portu üzerinden haberleşmenin sağlandığı bu sistem modda diğer yani İstemci modda diğer sistemlerin bağlanılması beklenmektedir. 
+
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{sddiagram.jpg}
+  \caption{Representation of SD  diagram}\label{fig:smclass}
+\end{figure}
+
+İstemci mod bağlantı esnasında hedef sunucu bilgilerini ve kendisini tanıtan tekil eşsiz bir ID ile erişimi sağlayacaktır. Bu bağlantıları eşsiz hale getirmek için IP numaraları kullanılmayacaktır. Çünkü aynı makina üzerindeki farklı uygulamalar birbirleri ile sunucu üzerinden haberleşme yeteneğine sahip olmalıdır. Aynı ID ile birden fazla erişim denemesi yapıldığında sistem 2. sistemin bağlantı denemesini “Kullanımdaki bir ID” uyarsıyla reddedecektir. 
+Yine bir sunucuya bağlı olan tüm istemciler o sunucuya periyodik olarak sunucuya bağlı oldukları yani ayakta oldukları bilgisini yollarlar. Ters açıdan bakıldığında sunucu da kendisine bağlı olan tüm istemcilere çalışır yani ayakta olduğu bilgisini periyodik olarak bildirmektedir. Bu sayede sistemdeki tüm elemanların bağlantı kontrolü gerçekleştirebilecektir. 
+
+
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{sdBaglanti.jpg}
+  \caption{Representation of SD  diagram}\label{fig:smclass}
+\end{figure}
+
+
+
+
+\section{Training Environment}
+
+\subsection{ÖK Öğrenci Konsolu}
+
+Öğrenci Konsolu (ÖK) bir Öğrenci Bilgisayarı (ÖBÜ) ve bir Sesli Haberleşme Cihazından (SHC) alt donanım bileşenlerden oluşmaktadır. ÖK’nin yapısı Şekil 2 de gösterilmiştir.
+Öğrenci Bilgisayarı bilgisayar kasa, fare, klavye ve LCD ekran donanımlardan oluşmaktadır. Bilgisayar üzerinde Windows 7 işletim sistemi kuruludur. Öğrenci Konsol Yönetimi (ÖKY) yazılım modülü üst seviye modül olup konsolunun genel işlevlerinden sorumludur. Dispeçer arayüz uygulamasını KM Client (KMC) modülü gerçekleştiriyor. Ekranların video görüntü kayıtları Video Kayıt Altyapı (VKA) modülü tarafından gerçekleştiriliyor.
+Sesli Haberleşme Cihazı dispeçerin sesli iletişimini sağlamak için gerekli mikrofon, kulaklık veya telefon ahize ile donatılacaktır. Üzerinde çalışan Sesli Haberleşme Yazılım Modülü (SHY) eğitim amaçlarına uygun biçimde arama yapmayı, aranmayı destekleyecektir.
+
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm,height=5cm]{ogrenci.jpg}
+  \caption{Representation of Dispatcher Console}\label{fig:smclass}
+\end{figure}
+
+
+
+\subsection{GEK Geniş Ekran Konsolu}
+
+Geniş Ekran Konsolu (GEK) bir Geniş Ekran Bilgisayar Ünitesi (ÖBÜ) ve bir Geniş Ekran Duvar Ünitesi (GDÜ) donanım bileşenlerden oluşmaktadır.GEK’in yapısı Şekil 3 de gösterilmiştir.
+Geniş Ekran Bilgisayar Ünitesi (GBÜ) çok çıkışlı ekran kartı ile donatılmış olup, her çıkış Geniş Ekran Duvar ünitesinin birer ekranına bağlıdır. Bilgisayar üzerinde Geniş Ekran Konsol Yönetimi (GKY) yazılımı çalışmaktadır. Bu yazılım Dispeçer arayüz uygulaması olan KM Client (KMC), Video Kayıt Altyapı (VKA) ve Video Geri Oynatma Aracı (VGO) modüllerin çalıştırılması ve kontrol edilmesinden sorumludur.
+Sesli Haberleşme Cihazı eğitmenin sesli iletişimini sağlamak için gerekli mikrofon, kulaklık veya telefon ahize ile donatılacaktır. Üzerinde çalışan Sesli Haberleşme Yazılım Modülü (SHY) eğitim amaçlarına uygun biçimde arama yapmayı, aranmayı destekleyecektir.
+
+
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm,height=5cm]{genisekran.jpg}
+  \caption{Representation of Wide Screen Console for 2 students}\label{fig:smclass}
+\end{figure}
+
+
+\subsection{Eğitmen Konsolu}
+
+Eğitmen Konsolu (EK) bir Eğitmen Bilgisayar Ünitesi (EBÜ) ve bir Geniş Ekran Duvar Ünitesi (GDÜ) donanım bileşenlerden oluşmaktadır. EK’nin yapısı Şekil 4 de gösterilmiştir.
+Eğitmen Bilgisayar Ünitesi (EBÜ) kasa, fare, klavye ve LCD ekran donanımlardan oluşmaktadır. Bilgisayar üzerinde Windows 7 işletim sistemi kuruludur. Bilgisayar üzerinde Eğitmen Konsol Yönetimi (EKY) yazılımı çalışmaktadır. Bu yazılım  Eğitmen Simülasyon Yönetim (ESY), Eğitmen Saha Müdahale (ESM), ve Video Geri Oynatma (VGO) modüllerin çalıştırılması ve kontrol edilmesinden sorumludur.
+Geniş Ekran Duvar Ünitesi (GDÜ) iki satır dört sütün düzenine göre yerleştirilmiş 8 LCD ekranlık görüntüleme duvardır.
+
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm,height=5cm]{egitmen.jpg}
+  \caption{Representation of Instracture Console with 2 active students}\label{fig:smclass}
+\end{figure}
+
+\subsection{SSÜ Simülasyon Sunucu Ünitesi}
+
+RAYTES projesinde tüm mesajlaşma koordinasyonu sağlamak amacıyla Simülasyon Sunucu Ünitesi uygulaması kullanılacaktır. Endüstriyel bir sunucu bilgisayarda koşacak uygulama proje ekibi tarafından geliştirilecektir. Uygulamanın temel işlevleri simülasyon bileşenleri arasında mesajlaşma senkronizasyonunu ve koordinasyonu sağlamak, sistemin çalışmasını tüm mesaj akışlarını görüntülemek, simülasyon altyapısını oluşturan diğer sunucu taraflı bileşenlerin ayağa kaldırılmasını sağlamak, simülasyon bileşenlerin bağlantı bilgilerini tutmak ve bunları diğer bileşenlerle paylaşmak gibi görevlerdir. Simülasyon sisteminin tüm aktif bileşenleri Simülasyon sunucusuna doğrudan ya da dolaylı olarak bağlı bulunacaktır.
+\subsection{Editör Analiz Konsolu}
+
+Editör Analiz Konsolu (EAK) bilgisayar kasa, fare, klavye ve LCD ekran donanımlardan oluşmaktadır. EAK’nin yapısı Şekil 7 da gösterilmiştir.
+Bilgisayar üzerinde Windows 7 işletim sistemi kurulu olup Senaryo Editör Aracı (SED), Performans Analiz Aracı (PA), Kullanıcı Yönetim Aracı (KYA), Öğrenci Eğitim Kayıtları Aracı (ÖEK) ve Video Geri Oynatma Aracı (VGO) yazılım modüller çalışmaktadır.
+EAK simülasyon öncesi senaryoların hazırlanması, kullanıcıların tanımlanması, ve simülasyon sonrası eğitim performans analizi ve öğrenci eğitim kayıtlarını incelemek için kullanılmaktadır. Dolaysıyla bu konsol simülasyon eğitimi esnasında değil “off-line” kullanılmaya yöneliktir.
+
+\subsection{Train Graph}
+
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm,height=5cm]{treggraph.jpg}
+  \caption{Representation of Train Graph}\label{fig:smclass}
+\end{figure}
+
+
+\section{EXPERIMENT RESULT}
 
 \section{Conclusion}
 The conclusion goes here.
+
 
 
 
