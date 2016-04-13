@@ -379,21 +379,27 @@ Email: {(nuri.ozalp, ahmet.basgoze, ozdemir.kavak, burcu.kalkan)}@tubitak.gov.tr
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-Computer Simulations can be considered as a powerful tools for learning such as analysing, designing, and interacting. 
+Computer Simulations can be considered as a powerful tools for learning such as analysing, designing, and interacting. Especially in the vital criticality level it has become more important tools such as train traffic simulation.
+The most important purpose of the train control system to prevent train collisions with other trains, keeping them in safe range.
 
-The purpose of this study is to provide train traffic control in a distributed simulation system. The system consists of an instructor five students and a scenario-editor. The system use real train route model located in Turkey.  During the simulation, dispatchers console can controls traffic of  trains which have different  size and speed in system. Success in educational outcomes can be measured.
-
- Instructor console make decisions about the organization of teaching and learning 
+The purpose of this study is to provide train traffic control in a distributed simulation system. The system consists of an instructor five students and a scenario-editor. The system use real train route model located in Turkey.  During the simulation, dispatchers console can controls train traffic which have different  size and speed in system. Success in educational outcomes can be measured. Instructor console make decisions about the organization of teaching and learning 
 experiences, classroom management, and responses to 
 individual students. The user is able to monitor and track the progress of five targeted students throughout the course of the simulation. 
 \end{abstract}
 
 \section{INTRODUCTION}
+Tren trafiği kontrol sistemleri çok kritik sistemlerdir. Amaçları trenleri güvenle ve zamanında varması gereken hedeflere ulaştırmaktır.
 
+Anlık konum eski model trenlerde bilinmemektedir. Sinyalizasyon sistemleri sayesinde trenlerin yaklaşık konumları 3km civarında tahmin edilebilmektedir.Tren trafiğini yönetenlere dispeçer denilmektedir. Son yıllarda dispeçer eğitimi sefer sayılarının artması ve tren yollarının artması ile daha önem kazanmıştır. Bu nedenler birçok eğitim simulasyonu geliştirilmiştir. Özellikle kontrol merkezlerinde birden çok sipeçerin birlikte çalışmasından dolayı dağıtık yapılı ve birden çok kullanıcılı simulasyonlar önem kazanmıştır. Bu sayede tek bir simulasyonda hazırlanan yoğun trafikli seneryo ile birden çok dispeçerin birlikte tren trafiği yönetmesi ve birçok problemle başa çıkması önem arz etmektedir. 
+
+Bu çalışmada eğitmen, öğrenci, seneryo editörü ve değerlendirme modülü olmak üzere 4 modül geliştirilmiştir. Seneryo editörü ile istenilen arazi hazırlanmakta ve istenilen bütün kötü koşullar bu arazide oluşturulmakta ve istediği kadar değişik konumlarda tren ekleyebilmektedir. Eğitmen ister tek simülasyon isterse farklı 5 simülasyon aynı anda başlatabilmekte ve simülasyonlara müdahele edebilmektedir. İstediği zaman snapshot ile eğitimde bazı önemli gördüğü yerleri tekrar tekrar öğrencilere tecrübe ettirebilmektedir. Öğrenciler yetkileri ölçüsünde sorumlu olduğu alanda tren trafiğini yönetebilmekte ve meydana gelen arızaların çözümü için çalışmalar yapabilmektedir. Anlık tren hareketlerini aynı zamanda trengraf ile takip edebilmektedir. Eğitim sonunda değerlendirme yapılabilmekte ve yetiştirilen dispeçerin başarısı ölçülebilmektedir.
 
 
 \section{RELATED WORK}
-The conclusion goes here.
+Yingkai Bao and his friend proposo a framework for Dispaetcher Training Simulation System. This system consist of 4 modules. First one is main program module which comminicate with other modules, second one is operator module which modeling dispather behiever. Thirt one is Scheduler module controls  evaluation of squences and the last module is power system simulator module is related power system. This study is not distrubuted simulation. Only one tranee get dispetcher education. In our system is distributed and support 5 trainees same or different scenerio in one session in simulation \cite{idakConf}.
+
+
+
 
 \section{SYSTEM DESIGN}
 \subsection{Simülasyon Yaşam Döngüsü}
@@ -575,11 +581,25 @@ EAK simülasyon öncesi senaryoların hazırlanması, kullanıcıların tanımla
 
 \subsection{Train Graph}
 
+
+Raytes Projesi kapsamında geliştirilen Trengraf bileşeni, tren hareket kayıtlarının (TrainEvent) sorgulanarak grafik üzerinde çeşitli seçenekler ile gösterimini sağlayan bir veri analiz aracıdır.
+74 de örnek bir ekran görüntüsü verilmiştir. Sorgu sonucunda trenlerin bloklardan geçiş hareketleri rahatlıkla izlenebilmektedir. 
+
+
+\begin{itemize}
+\item Eğrinin solundaki çizgi ile işaretlenmiş noktalar trenin bloklara girişini,
+\item Eğrinin sağındaki çizgi ile işaretlenmiş noktalar trenin bloklardan çıkışını,
+\item İki çizgi arasında kalan transparan boyalı alan ise giriş-çıkış arasındaki zaman farkını, yani trenin o blokta ne kadar kaldığını ifade etmektedir.
+\end{itemize}
+
+Bu seçeneklerin hangilerinin gösterileceği kullanıcı tarafından seçilebilmektedir.
+
 \begin{figure}[h!]
   \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=8cm,height=5cm]{treggraph.jpg}
   \caption{Representation of Train Graph}\label{fig:smclass}
+  
 \end{figure}
 
 
@@ -633,6 +653,11 @@ This work has been conducted within Rail Transit systems Simulation Research Lab
 \bibitem{IEEEhowto:kopka}
 H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
   0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+
+
+\bibitem{idakConf}
+Y. Bao Coll. of Electr. Eng., Zhejiang Univ., Hangzhou, China
+Z. Li ; D. Wen ; C. Guo ; L. Zhang ; S. Pang
 
 \end{thebibliography}
 
