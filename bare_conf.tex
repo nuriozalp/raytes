@@ -390,7 +390,7 @@ Trenler taşımacılıkta çok önemli bir yere sahiptir. Tren trafiği kontrol 
 
 Trains have a very important role in transportation. Train traffic control systems are very critical systems. They are called dispathers who manage and route train traffic. Dispathers responsibility is to bring the train arriving  destination safely and on time.
 
-Anlık konum eski model trenlerde bilinmemektedir. Sinyalizasyon sistemleri sayesinde trenlerin yaklaşık konumları 3km civarında tahmin edilebilmektedir. Bu nedenle tren trafiği kritik olmaktadır. Son yıllarda dispeçer eğitimi sefer sayılarının artması ve tren yollarının artması ile daha da önem kazanmıştır. Dispeçerler gerçek sistemde tecrübe edinmeleri uzun zaman almaktadır. Bu nedenle birçok eğitim simulasyonu geliştirilmiştir. Özellikle kontrol merkezlerinde birden çok dipeçerin birlikte çalışmasından dolayı dağıtık yapılı ve birden çok kullanıcılı simulasyonlar önem kazanmıştır. Bu sayede tek bir simulasyonda hazırlanan yoğun trafikli seneryo ile birden çok dispeçerin birlikte tren trafiği yönetmesi ve birçok problemle başa çıkması önem arz etmektedir. 
+Anlık konum eski model trenlerde bilinmemektedir. Sinyalizasyon sistemleri sayesinde trenlerin yaklaşık konumları 3km civarında tahmin edilebilmektedir. Bu nedenle tren trafiği kritik olmaktadır. Son yıllarda dispeçer eğitimi sefer sayılarının artması ve tren yollarının artması ile daha da önem kazanmıştır. Dispeçerlerin gerçek sistemde tecrübe edinmeleri uzun zaman almakla birlikte risk oluşturmaktadır. Bu nedenle birçok eğitim simulasyonu geliştirilmiştir. Özellikle kontrol merkezlerinde birden çok dipeçerin birlikte çalışmasından dolayı dağıtık yapılı ve birden çok kullanıcılı simulasyonlar önem kazanmıştır. Bu sayede tek bir simulasyonda hazırlanan yoğun trafikli seneryo ile birden çok dispeçerin birlikte tren trafiği yönetmesi ve birçok problemle başa çıkması önem arz etmektedir. 
 
 Instant position is not known in the old model trains. With the approximate location of the train signaling system can be estimated at around 3km. Therefore, train traffic is critical. With the increasing number of ways to increase the number of flights and train dispatcher training has gained more importance in recent years. Dispatcher they acquire experience in the real system takes a long time. Therefore, it developed many training simulation. In particular, due to the multiple control centers dipeçer made to work together and distributed multiuser simulations have gained importance. In this way, prepared in a single high-traffic simulation to manage multiple dispatchers together with scenario-train traffic and it is important to deal with many problems.
 
@@ -541,9 +541,9 @@ Mesajlaşma ve iletişimi sağlayacak olan ana modül iki modda çalışabilmekt
 
 \subsection{ÖK Öğrenci Konsolu}
 
-Öğrenci Konsolu (ÖK) bir Öğrenci Bilgisayarı (ÖBÜ) ve bir Sesli Haberleşme Cihazından (SHC) alt donanım bileşenlerden oluşmaktadır. ÖK’nin yapısı Şekil 2 de gösterilmiştir.
-Öğrenci Bilgisayarı bilgisayar kasa, fare, klavye ve LCD ekran donanımlardan oluşmaktadır. Bilgisayar üzerinde Windows 7 işletim sistemi kuruludur. Öğrenci Konsol Yönetimi (ÖKY) yazılım modülü üst seviye modül olup konsolunun genel işlevlerinden sorumludur. Dispeçer arayüz uygulamasını KM Client (KMC) modülü gerçekleştiriyor. Ekranların video görüntü kayıtları Video Kayıt Altyapı (VKA) modülü tarafından gerçekleştiriliyor.
-Sesli Haberleşme Cihazı dispeçerin sesli iletişimini sağlamak için gerekli mikrofon, kulaklık veya telefon ahize ile donatılacaktır. Üzerinde çalışan Sesli Haberleşme Yazılım Modülü (SHY) eğitim amaçlarına uygun biçimde arama yapmayı, aranmayı destekleyecektir.
+Öğrenci Konsolu (ÖK) bir Öğrenci Bilgisayarı (ÖBÜ) ve bir Sesli Haberleşme Cihazı (SHC) alt donanım bileşenlerden oluşmaktadır. ÖK’nin yapısı Şekil 2 de gösterilmiştir.
+Öğrenci Bilgisayarı bilgisayar kasası, fare, klavye ve LCD ekran donanımlardan oluşmaktadır. Bilgisayar üzerinde Windows 7 işletim sistemi kuruludur. Öğrenci Konsol Yönetimi (ÖKY) yazılım modülü üst seviye modül olup öğrenci konsolunun genel işlevlerinden sorumludur. Dispeçer arayüz uygulamasını KM Client (KMC) modülü gerçekleştirmektedir. Ekranların video görüntü kayıtları Video Kayıt Altyapı (VKA) modülü tarafından kaydedilmektedir.
+Sesli Haberleşme Cihazı dispeçerin sesli iletişimini sağlamak için gerekli mikrofon, kulaklık veya ahize ile donatılacaktır. Üzerinde çalışan Sesli Haberleşme Yazılım Modülü (SHY) eğitim amaçlarına uygun biçimde arama yapmayı, aranmayı destekleyecektir.
 
 \begin{figure}[h!]
   \centering
@@ -558,8 +558,7 @@ Sesli Haberleşme Cihazı dispeçerin sesli iletişimini sağlamak için gerekli
 
 Geniş Ekran Konsolu (GEK) bir Geniş Ekran Bilgisayar Ünitesi (ÖBÜ) ve bir Geniş Ekran Duvar Ünitesi (GDÜ) donanım bileşenlerden oluşmaktadır.GEK’in yapısı Şekil 3 de gösterilmiştir.
 Geniş Ekran Bilgisayar Ünitesi (GBÜ) çok çıkışlı ekran kartı ile donatılmış olup, her çıkış Geniş Ekran Duvar ünitesinin birer ekranına bağlıdır. Bilgisayar üzerinde Geniş Ekran Konsol Yönetimi (GKY) yazılımı çalışmaktadır. Bu yazılım Dispeçer arayüz uygulaması olan KM Client (KMC), Video Kayıt Altyapı (VKA) ve Video Geri Oynatma Aracı (VGO) modüllerin çalıştırılması ve kontrol edilmesinden sorumludur.
-Sesli Haberleşme Cihazı eğitmenin sesli iletişimini sağlamak için gerekli mikrofon, kulaklık veya telefon ahize ile donatılacaktır. Üzerinde çalışan Sesli Haberleşme Yazılım Modülü (SHY) eğitim amaçlarına uygun biçimde arama yapmayı, aranmayı destekleyecektir.
-
+Geniş Ekran Duvar Ünitesi (GDÜ) iki satır dört sütün düzenine göre yerleştirilmiş 8 LCD ekranlık görüntüleme duvarıdır.
 
 \begin{figure}[h!]
   \centering
@@ -572,8 +571,8 @@ Sesli Haberleşme Cihazı eğitmenin sesli iletişimini sağlamak için gerekli 
 \subsection{Eğitmen Konsolu}
 
 Eğitmen Konsolu (EK) bir Eğitmen Bilgisayar Ünitesi (EBÜ) ve bir Geniş Ekran Duvar Ünitesi (GDÜ) donanım bileşenlerden oluşmaktadır. EK’nin yapısı Şekil 4 de gösterilmiştir.
-Eğitmen Bilgisayar Ünitesi (EBÜ) kasa, fare, klavye ve LCD ekran donanımlardan oluşmaktadır. Bilgisayar üzerinde Windows 7 işletim sistemi kuruludur. Bilgisayar üzerinde Eğitmen Konsol Yönetimi (EKY) yazılımı çalışmaktadır. Bu yazılım  Eğitmen Simülasyon Yönetim (ESY), Eğitmen Saha Müdahale (ESM), ve Video Geri Oynatma (VGO) modüllerin çalıştırılması ve kontrol edilmesinden sorumludur.
-Geniş Ekran Duvar Ünitesi (GDÜ) iki satır dört sütün düzenine göre yerleştirilmiş 8 LCD ekranlık görüntüleme duvardır.
+Eğitmen Bilgisayar Ünitesi (EBÜ), Öğrenci Bilgisayar Ünitesi (ÖBÜ) ile aynı özelliklere sahiptir. Öğrenci Bilgisayar Ünitesinde olduğu gibi bilgisayar kasası, fare, klavye ve LCD ekran donanımlarından oluşmaktadır. Bilgisayar üzerinde Windows 7 işletim sistemi kuruludur. Bilgisayar üzerinde Eğitmen Konsol Yönetimi (EKY) yazılımı çalışmaktadır. Bu yazılım  Eğitmen Simülasyon Yönetim (ESY), Eğitmen Saha Müdahale (ESM), ve Video Geri Oynatma (VGO) modüllerin çalıştırılması ve kontrol edilmesinden sorumludur.
+
 
 \begin{figure}[h!]
   \centering
@@ -618,7 +617,7 @@ Bu seçeneklerin hangilerinin gösterileceği kullanıcı tarafından seçilebil
 \section{EXPERIMENT RESULT}
 Geliştirdiğimiz dağıtık yapılı 5 öğrencinin aynı anda eğitim alabildiği RAYTES projemizi 2 şekilde test ettik. Bunlardan ilki 20 tren ve tek simülasyon 5 kullanıcı yetkisi dahilinde 1 saatlik seneryoda eğitim aldılar. 
 
-Diğer testimizde 1'er saatilik 5 ayrı simülasyon ve her simülasyona bir öğrenci atandı. Bu şekilde eğitim aldılar.
+Diğer testimizide 1'er saatilik 5 ayrı simülasyon ve her simülasyona bir öğrenci atanarak gerçekleştirdik.
 
 
 Deneyler sonucunda elde edilen tren hareketlerini gösteren tren graf şekildeki gibi olmaktadır. 
