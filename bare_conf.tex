@@ -388,15 +388,25 @@ individual students. The user is able to monitor and track the progress of five 
 \end{abstract}
 
 \section{INTRODUCTION}
-Tren trafiği kontrol sistemleri çok kritik sistemlerdir. Amaçları trenleri güvenle ve zamanında varması gereken hedeflere ulaştırmaktır.
+Trenler taşımacılıkta çok önemli bir yere sahiptir. Tren trafiği kontrol sistemleri çok kritik sistemlerdir. Tren trafiğini yönetenlere dispeçer denilmektedir. Dispeçerin amaçları trenleri güvenle ve zamanında varması gereken hedeflere ulaştırmaktır.
 
-Anlık konum eski model trenlerde bilinmemektedir. Sinyalizasyon sistemleri sayesinde trenlerin yaklaşık konumları 3km civarında tahmin edilebilmektedir.Tren trafiğini yönetenlere dispeçer denilmektedir. Son yıllarda dispeçer eğitimi sefer sayılarının artması ve tren yollarının artması ile daha önem kazanmıştır. Bu nedenler birçok eğitim simulasyonu geliştirilmiştir. Özellikle kontrol merkezlerinde birden çok sipeçerin birlikte çalışmasından dolayı dağıtık yapılı ve birden çok kullanıcılı simulasyonlar önem kazanmıştır. Bu sayede tek bir simulasyonda hazırlanan yoğun trafikli seneryo ile birden çok dispeçerin birlikte tren trafiği yönetmesi ve birçok problemle başa çıkması önem arz etmektedir. 
+Anlık konum eski model trenlerde bilinmemektedir. Sinyalizasyon sistemleri sayesinde trenlerin yaklaşık konumları 3km civarında tahmin edilebilmektedir. Bu nedenle tren trafiği kritik olmaktadır. Son yıllarda dispeçer eğitimi sefer sayılarının artması ve tren yollarının artması ile daha da önem kazanmıştır. Dispeçerler gerçek sistemde tecrübe edinmeleri uzun zaman almaktadır. Bu nedenle birçok eğitim simulasyonu geliştirilmiştir. Özellikle kontrol merkezlerinde birden çok dipeçerin birlikte çalışmasından dolayı dağıtık yapılı ve birden çok kullanıcılı simulasyonlar önem kazanmıştır. Bu sayede tek bir simulasyonda hazırlanan yoğun trafikli seneryo ile birden çok dispeçerin birlikte tren trafiği yönetmesi ve birçok problemle başa çıkması önem arz etmektedir. 
 
-Bu çalışmada eğitmen, öğrenci, seneryo editörü ve değerlendirme modülü olmak üzere 4 modül geliştirilmiştir. Seneryo editörü ile istenilen arazi hazırlanmakta ve istenilen bütün kötü koşullar bu arazide oluşturulmakta ve istediği kadar değişik konumlarda tren ekleyebilmektedir. Eğitmen ister tek simülasyon isterse farklı 5 simülasyon aynı anda başlatabilmekte ve simülasyonlara müdahele edebilmektedir. İstediği zaman snapshot ile eğitimde bazı önemli gördüğü yerleri tekrar tekrar öğrencilere tecrübe ettirebilmektedir. Öğrenciler yetkileri ölçüsünde sorumlu olduğu alanda tren trafiğini yönetebilmekte ve meydana gelen arızaların çözümü için çalışmalar yapabilmektedir. Anlık tren hareketlerini aynı zamanda trengraf ile takip edebilmektedir. Eğitim sonunda değerlendirme yapılabilmekte ve yetiştirilen dispeçerin başarısı ölçülebilmektedir.
+Bu çalışmada dispeçerlerin yoğun trafiğin olduğu, hızları ve türleri farklı olan trenlerin bulunduğu ve sahada meydana gelebilecek problemlerin simüle edildiği birbirinden farklı seneryolar ile eğitim almaları sağlanmıştır. Bu sayede daha kısa sürede alanında uzmanlaşabilmesi hedeflenmiştir. Geliştirilen simülasyon sistemi 5 modülden oluşmaktadır. Bunlar eğitmen, öğrenci, seneryo editörü ve değerlendirme modülü ve tren graf modülüdür. Seneryo editörü ile istenilen arazi hazırlanmakta ve istenilen bütün kötü koşullar bu arazide oluşturulmakta ve istediği kadar değişik konumlarda tren ekleyebilmektedir. Eğitmen ister tek simülasyon isterse farklı 5 simülasyon aynı anda başlatabilmekte ve simülasyonlara müdahele edebilmektedir. İstediği zaman snapshot ile eğitimde bazı önemli gördüğü yerleri tekrar tekrar öğrencilere tecrübe ettirebilmektedir. Öğrenciler yetkileri ölçüsünde sorumlu olduğu alanda tren trafiğini yönetebilmekte ve meydana gelen arızaların çözümü için çalışmalar yapabilmektedir. Anlık tren hareketlerini aynı zamanda trengraf ile takip edebilmektedir. Eğitim sonunda değerlendirme yapılabilmekte ve yetiştirilen dispeçerin başarısı ölçülebilmektedir.
+
+2. bölümde related wwork, 3. bölümde sistemin nasıl haberleşme alt yapısı hakkında bilgi verilmiştir. 4. Bölümde sisteme ait 5 modülden bahsedilmiştir. 5. modülde yapılan deney hakkında bilgiler yer almaktadır. 6.  bölümde ise sonuç kısmına yer verilmiştir.
 
 
 \section{RELATED WORK}
-Yingkai Bao and his friend proposo a framework for Dispaetcher Training Simulation System. This system consist of 4 modules. First one is main program module which comminicate with other modules, second one is operator module which modeling dispather behiever. Thirt one is Scheduler module controls  evaluation of squences and the last module is power system simulator module is related power system. This study is not distrubuted simulation. Only one tranee get dispetcher education. In our system is distributed and support 5 trainees same or different scenerio in one session in simulation \cite{idakConf}.
+
+Tren trafiğini yöneten ve birden çok dispeçerin eğitim aldığı dağıtık yapılı simülasyonlar henüz yaygın olarak kullanılmaktadır. Bizim yaptığımız çalışmaya benzer çalışmalara bu bölümde yer verilmiştir.
+
+In Middelkoop and his friend study is a simulator which which stands for Flexible Rail Infra Simulation of Operations (FRISO). It includes automatized  a simulation model by using a connection to database, editor including generator functions and the possibility to perform single and multiple (stochastic) simulation experiments. FRISO models include following elements  track layout, signalling system, route setting, and interlocking. Our system presents multiple screen of regions and to let five students to work at same or different simulation at the same time \cite{FRISO}.
+
+ 
+
+
+In Baohua  and his friend's study is about  multi-train simulator. It is able to do  train performances assessment at the given railway lines, signal layouts optimization, energy-efficient operating strategies , in major terminals exploration of traffic bottlenecks, the evaluation of the reliability of scheduled timetables and train delay propagation. In multi-train simulation does these automatically, in our system dispatcher conduct them \cite{ICVES}.
 
 
 
@@ -650,14 +660,14 @@ This work has been conducted within Rail Transit systems Simulation Research Lab
 % (used to reserve space for the reference number labels box)
 \begin{thebibliography}{1}
 
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+\bibitem{FRISO}
+A. D. Middelkoop and L. Loeve, “Simulation of traffic management with FRISO,” 2006, vol. 1, pp. 501–509.
 
-
-\bibitem{idakConf}
-Y. Bao Coll. of Electr. Eng., Zhejiang Univ., Hangzhou, China
-Z. Li ; D. Wen ; C. Guo ; L. Zhang ; S. Pang
+\bibitem{ICVES}
+M. Baohua, J. Wenzheng, C. Shaokuan, and L. Jianfeng, “A computer-aided multi-train simulator for rail traffic,” in IEEE International Conference on Vehicular Electronics and Safety, 2007. ICVES, 2007, pp. 1–5.
+ 
+ 
+ 
 
 \end{thebibliography}
 
