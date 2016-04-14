@@ -414,7 +414,7 @@ In Baohua  and his friend's study is about  multi-train simulator. It is able to
 \section{SYSTEM DESIGN}
 \subsection{Simülasyon Yaşam Döngüsü}
 
-RAYTES sistemi beş bağımsız simülasyon ortamını eşzamanlı ve birbirinden bağımsız olarak yürütebilmektedir. Aşağıdaki gösterilen Şekil 8 deki yaşam döngüsü bir simülasyon ortamını temsil etmektedir. Sistem ilk çalıştırıldğında IDLE durumda bulunmaktadır. Bir senaryo sisteme yüklenerek simülasyon oturumu oluşturulduğunda LOADED durumuna geçilir. Bu durumda simülasyon başlangiç saatinde beklemekte olup, çalışmaya hazır haldedir. Simülasyon çalıştırıldığında RUNNING durumuna geçer, simülasyon saati ilerlemekte, simüle edilen nesneler zamana duyarlı biçimde işlenir, ve insan arayüzlerinde sistem ile kullanıcılar arası etkileşim gerçeklenmektedir. PAUSE durumunda simülasyon saati ve simülasyon işlemler geçici olarak durdurulur. PAUSE durumunda yine simülasyon RUNNING durumuna başlayabilir. Simülasyon sonlandırıldığında TERMINATED durumuna düşer ve simülasyon artık yeniden başlatılamaz.
+RAYTES sistemi beş bağımsız simülasyon ortamını eşzamanlı ve birbirinden bağımsız olarak yürütebilmektedir. Aşağıdaki gösterilen Şekil \ref{fig:simyasamdongusu}' deki yaşam döngüsü bir simülasyon ortamını temsil etmektedir. Sistem ilk çalıştırıldğında IDLE durumda bulunmaktadır. Bir senaryo sisteme yüklenerek simülasyon oturumu oluşturulduğunda LOADED durumuna geçilir. Bu durumda simülasyon başlangiç saatinde beklemekte olup, çalışmaya hazır haldedir. Simülasyon çalıştırıldığında RUNNING durumuna geçer, simülasyon saati ilerlemekte, simüle edilen nesneler zamana duyarlı biçimde işlenir, ve insan arayüzlerinde sistem ile kullanıcılar arası etkileşim gerçeklenmektedir. PAUSE durumunda simülasyon saati ve simülasyon işlemler geçici olarak durdurulur. PAUSE durumunda yine simülasyon RUNNING durumuna başlayabilir. Simülasyon sonlandırıldığında TERMINATED durumuna düşer ve simülasyon artık yeniden başlatılamaz.
 
 
 
@@ -423,7 +423,7 @@ RAYTES sistemi beş bağımsız simülasyon ortamını eşzamanlı ve birbirinde
   \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=8cm]{simyasamdongusu.jpg}
-  \caption{Representation of Simulation Life cycle}\label{fig:smclass}
+  \caption{Representation of Simulation Life cycle}\label{fig:simyasamdongusu}
 \end{figure}
 
 \subsection{Comminication}
@@ -444,7 +444,7 @@ Modbus otomasyon senayi çevrelerinde kabul görmüş bir ham veri iletişim pro
 
 
 \subsection{SSY Simülasyon Sunucu Yönetim Modülü}
-SSY yani Simülasyon Sunucu Yönetim modülü simülasyon sistemi içerisindeki tüm aktif modüllerin bağlı olduğu haberleşme altyapısının ve koordinasyonun sağlandığı modüldür.
+SSY yani Simülasyon Sunucu Yönetim modülü simülasyon sistemi içerisindeki tüm aktif modüllerin bağlı olduğu  haberleşme altyapısının ve koordinasyonun sağlandığı modüldür.Şekil \ref{fig:syySequenceDiagram}'de squance diagram ve  Şekil \ref{fig:syygrafic}'de arayüzü gösterilmiştir.
 Simülasyon akışı içerisinde doğrudan bir görevle sorumlu tüm aktif modüller bu modüle ya doğrudan ya da altında çalıştıkları ana modül üzerinden dolaylı olarak bağlı olmak zorundadır. Simülasyonun çalışması ve hazırlanması esnasında gerçekleşen tüm mesajlaşmalar bu modül üzerinden gerçekleşmektedir.
 SSY ayrıca sistemdeki aktif konsollar gibi kendi içerisindeki bilgileri uygun mesajlara karşılık olarak diğer konsollarla yada uygulamalarla paylaşabilmektedir.
 SSY mesajlaşma amacıyla tüm sistem elemanları gibi SD yani Simülasyon Destek ve Mesajlaşama Modülü’nü kullanmaktadır. Bu birim tüm giriş bilgilerini SD üzerin almakta olup yine çıkış bilgilerini de SD üzerinden sisteme dağıtmaktadır. SD bu SSY üzerinde Mesaj Sunucu görevi ile tanımlanmış olarak kullanılmaktadır.
@@ -465,8 +465,8 @@ SSY üzerine gelen herbir mesaj bir ön kontrolden geçirilerek mesaj ile ilgili
 \begin{figure}[h!]
   \centering
   % Requires \usepackage{graphicx}
-  \includegraphics[width=8cm]{syysquenceDiagram.jpg}
-  \caption{Representation of SYY squence diagram}\label{fig:smclass}
+  \includegraphics[width=8cm]{syySequenceDiagram.jpg}
+  \caption{Representation of SYY squence diagram}\label{fig:syySequenceDiagram}
 \end{figure}
 
 
@@ -474,7 +474,7 @@ SSY üzerine gelen herbir mesaj bir ön kontrolden geçirilerek mesaj ile ilgili
   \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=8cm]{syygrafic.jpg}
-  \caption{Representation of SYY class diagram}\label{fig:smclass}
+  \caption{Representation of SYY UI}\label{fig:syygrafic}
 \end{figure}
 
 
@@ -484,13 +484,13 @@ Hiyerarşik mesaj gönderimi bir mesajın, örneğin simülasyon yükleme mesaj�
 
 \subsection{SM Simülasyon Motor Modülü}
 \subsubsection{Sınıf Yapısı}
-Simülasyon Motoru (SM) modülündeki ana sınıf SimMotor sınıfıdır. Bu sınıf Config, XmlUtility, SahaEventList, FTSimManager::FTSimMgr ve Communicator::Client sınıfları bünyesinde yaratıp kullanmaktadır. FTSimMgr Saha Trafik Simülasyon Yönetimi (FTS) modülünde tanımlıdır. SimMotor sınıfı FTSimMgr sınıfın sağladığı arayüz üzerinden anklaşman, saha ve trafik simülasyon modellerinde erişmektedir. Communicator modüllünde tanımlı Client sınıfı ise SimMotor sınıfına SimulationMessage mesajlaşma arayüz sağlamaktadır. SimMotorGui, SimMotor sınıfa debug ve test maksatlı grafik pencere arayüzü sağlamaktadır.
+Simülasyon Motoru (SM) modülündeki Şekil \ref{fig:smgrafic}'de gösterilen ana sınıf SimMotor sınıfıdır. Bu sınıf Config, XmlUtility, SahaEventList, FTSimManager::FTSimMgr ve Communicator::Client sınıfları bünyesinde yaratıp kullanmaktadır. FTSimMgr Saha Trafik Simülasyon Yönetimi (FTS) modülünde tanımlıdır. SimMotor sınıfı FTSimMgr sınıfın sağladığı arayüz üzerinden anklaşman, saha ve trafik simülasyon modellerinde erişmektedir. Communicator modüllünde tanımlı Client sınıfı ise SimMotor sınıfına SimulationMessage mesajlaşma arayüz sağlamaktadır. SimMotorGui, SimMotor sınıfa debug ve test maksatlı grafik pencere arayüzü sağlamaktadır.
 
 \begin{figure}[h!]
   \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=8cm]{smgrafic.jpg}
-  \caption{Representation of SM class diagram}\label{fig:smclass}
+  \caption{Representation of SM class diagram}\label{fig:smgrafic}
 \end{figure}
 
 
@@ -499,37 +499,37 @@ Simülasyon Motoru (SM) modülündeki ana sınıf SimMotor sınıfıdır. Bu sı
 Simülasyon Sunucu Yönetimi (SSY) ilk başladığında 5 adet bağımsız Simülasyon Motoru (SM) proses yaratır. Bu SM proses’ler sayesinde 5 bağımsız simülasyon eşzamanlı olarak SSY tarafından kontrol edilmesine olanak sağlar. SSY SimulasyonMessage tür mesajarı SM ye aktarmaktadır. Bu tür mesajlar, simülasyon yükle, sümülasyon başlat tarzında üst seviye kontrol mesajlardır. SM bu mesajları Saha Trafik Yönetimi (FTS) simülasyon modüllerine iletmektedir. Simülasyon modülü bu mesajların gerektirdiği işlemleri tamamladığında SM’ye yanıt (olumlu veya olumsuz) vermektedir ve bu netice SSY ye geri bildirilmektedir.
 LoadSimulation mesajı genel örnek olarak ele alınırsa; bu mesaj SM tarafından alındığında iki işlem tetiklemektedir. Birincisi, senaryo da oynatılması gereken önceden programlanmış olaylar veritabanından okunuyor ve Saha Event List (SEL) listesine yüklenmektedir. Bu olayların her biri bir Saha Event (SE) olarak tanımlanmıştır. 
 İkinci işlem ise FTS ve onun bünyesindeki Saha Simülasyon (SS) modeli, Anklaşman Simülasyon (AS) modeli ve Trafik Simülasyon (TS) modelini ilgili senaryonun teknik parametrelerini veritabanından yüklemesi ve simülasyon başlatma durumu için hazırlanması.
-Simülasyon Running durumundayken SEL deki sıralanmış SE olaylar simülasyon zamanına göre FTS modülüne işlenmek için aktarılmaktadır. Bu mekanizma bir senaryonun müdahalesiz olarak işlenmesini sağlamaktadır. Ancak bir simülasyon ayrıca eğitmen tarafından müdahale edilmesine izin vermektedir. Eğitimen, Eğitmen Saha Müdahale (ESM) aracı kullanarak manuel Saha Event yaratabilir. Bu manuel olarak yaratılan SE olaylar SM’ye anlık olarak iletdiğinde SE olayı SEL listesinin başına eklemektedir ve böylelikle simülasyon’un sonraki çevriminde hemen işlenmesi sağlanmaktadır.
+Simülasyon Running durumundayken SEL deki sıralanmış SE olaylar simülasyon zamanına göre FTS modülüne işlenmek için aktarılmaktadır. Bu mekanizma bir senaryonun müdahalesiz olarak işlenmesini sağlamaktadır. Ancak bir simülasyon ayrıca eğitmen tarafından müdahale edilmesine izin vermektedir. Eğitimen, Eğitmen Saha Müdahale (ESM) aracı kullanarak manuel Saha Event yaratabilir. Bu manuel olarak yaratılan SE olaylar SM’ye anlık olarak iletdiğinde SE olayı SEL listesinin başına eklemektedir ve böylelikle simülasyon’un sonraki çevriminde hemen işlenmesi sağlanmaktadır. Bütün bu akış Şekil \ref{fig:smCommunicationDiagram}'deki diagramda gösterilmiştir.
 
 \begin{figure}[h!]
   \centering
   % Requires \usepackage{graphicx}
-  \includegraphics[width=8cm]{smcom.jpg}
-  \caption{Representation of SM Comminication diagram}\label{fig:smclass}
+  \includegraphics[width=8cm]{smCommunicationDiagram.jpg}
+  \caption{Representation of SM Comminication diagram}\label{fig:smCommunicationDiagram}
 \end{figure}
 
 \subsubsection{SD Simülasyon Destek ve Mesajlaşma Modülü}
 
-Simülasyon Destek ve Mesajlaşma modülü proje içerisinde birbirinden fiziksel olarak bağımsız fakat haberleşme ve etkileşim içinde olan birimlerin birbirleri ile olan haberleşmesini sağlamaktadır.
+Şekil \ref{fig:RepresentationSDDiagram}'de görüldüğü gibi Simülasyon Destek ve Mesajlaşma modülü proje içerisinde birbirinden fiziksel olarak bağımsız fakat haberleşme ve etkileşim içinde olan birimlerin birbirleri ile olan haberleşmesini sağlamaktadır.
 Temel sunucu istemci mimarisi üzerine kurulmuş haberleşme modülü projeye özgü bağlantı kopukluğu kontrolü, tekil bağlantı özelliği, XML tabanlı mesaj kontrolü gibi özellikler eklenerek projeye özgü protokol kuralları çerçevesinde tasarlanmıştır.
 Mesajlaşma ve iletişimi sağlayacak olan ana modül iki modda çalışabilmektedir. Bu modalardan ilki Server yani sunucu mod iken diğer mod ise Client yani istemci modüldür. Sunucu modda çalıştırıldığında belirli bir bağlatı portu üzerinden haberleşmenin sağlandığı bu sistem modda diğer yani İstemci modda diğer sistemlerin bağlanılması beklenmektedir. 
 
 \begin{figure}[h!]
   \centering
   % Requires \usepackage{graphicx}
-  \includegraphics[width=8cm]{sddiagram.jpg}
-  \caption{Representation of SD  diagram}\label{fig:smclass}
+  \includegraphics[width=8cm]{RepresentationSDDiagram.jpg}
+  \caption{Representation of SD  diagram}\label{fig:RepresentationSDDiagram}
 \end{figure}
 
 İstemci mod bağlantı esnasında hedef sunucu bilgilerini ve kendisini tanıtan tekil eşsiz bir ID ile erişimi sağlayacaktır. Bu bağlantıları eşsiz hale getirmek için IP numaraları kullanılmayacaktır. Çünkü aynı makina üzerindeki farklı uygulamalar birbirleri ile sunucu üzerinden haberleşme yeteneğine sahip olmalıdır. Aynı ID ile birden fazla erişim denemesi yapıldığında sistem 2. sistemin bağlantı denemesini “Kullanımdaki bir ID” uyarsıyla reddedecektir. 
-Yine bir sunucuya bağlı olan tüm istemciler o sunucuya periyodik olarak sunucuya bağlı oldukları yani ayakta oldukları bilgisini yollarlar. Ters açıdan bakıldığında sunucu da kendisine bağlı olan tüm istemcilere çalışır yani ayakta olduğu bilgisini periyodik olarak bildirmektedir. Bu sayede sistemdeki tüm elemanların bağlantı kontrolü gerçekleştirebilecektir. 
+Şekil \ref{fig:SDDiagram}'de görüldüğü gibi yine bir sunucuya bağlı olan tüm istemciler o sunucuya periyodik olarak sunucuya bağlı oldukları yani ayakta oldukları bilgisini yollarlar. Ters açıdan bakıldığında sunucu da kendisine bağlı olan tüm istemcilere çalışır yani ayakta olduğu bilgisini periyodik olarak bildirmektedir. Bu sayede sistemdeki tüm elemanların bağlantı kontrolü gerçekleştirebilecektir. 
 
 
 \begin{figure}[h!]
   \centering
   % Requires \usepackage{graphicx}
-  \includegraphics[width=8cm]{sdBaglanti.jpg}
-  \caption{Representation of SD  diagram}\label{fig:smclass}
+  \includegraphics[width=8cm]{SDDiagram.jpg}
+  \caption{Representation of SD  diagram}\label{fig:SDDiagram}
 \end{figure}
 
 
@@ -614,9 +614,31 @@ Bu seçeneklerin hangilerinin gösterileceği kullanıcı tarafından seçilebil
 
 
 \section{EXPERIMENT RESULT}
+Geliştirdiğimiz dağıtık yapılı 5 öğrencinin aynı anda eğitim alabildiği RAYTES projemizi 2 şekilde test ettik. Bunlardan ilki 20 tren ve tek simülasyon 5 kullanıcı yetkisi dahilinde 1 saatlik seneryoda eğitim aldılar. 
 
+Diğer testimizde 1'er saatilik 5 ayrı simülasyon ve her simülasyona bir öğrenci atandı. Bu şekilde eğitim aldılar.
+
+
+Deneyler sonucunda elde edilen tren hareketlerini gösteren tren graf şekildeki gibi olmaktadır. 
+
+toplam cpu kullanımı aşağıdaki gibi yer almaktadır.
+
+
+
+
+
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{20160414_105046.jpg}
+  \caption{Representation of Dispetcher Education}\label{fig:smclass}
+  
+\end{figure}
 \section{Conclusion}
-The conclusion goes here.
+Computer Simulations can be considered as a powerful tools for learning such as analysing, designing, and interacting. Especially in the vital criticality level it has become more important tools such as train traffic simulation.
+The most important purpose of the train control system to prevent train collisions with other trains, keeping them in safe range.
+
+The purpose of this study is to provide train traffic control in a distributed simulation system. The system consists of an instructor support five students and a scenario-editor. The system use real train route model located in Turkey.  During the simulation, dispatchers console can controls train traffic which have different  size and speed in system. Success in educational outcomes can be measured. Instructor console make decisions about the organization of teaching and learning experiences, classroom management, and responses to individual students. The user is able to monitor and track the progress of five targeted students throughout the course of the simulation.
 
 
 
@@ -629,7 +651,7 @@ The conclusion goes here.
 \section*{Acknowledgment}
 
 
-This work has been conducted within Rail Transit systems Simulation Research Lab- project (project number 3920-S513000), which is part of the Rail Transit Systems research program funded by The National Research Institute of Electronics and Cryptology (TUBITAK BILGEM). We thank all project partners for their work and contributions to the project.
+This work has been conducted within Rail Transit systems Simulation Research Lab- project (project number 3920-S513000) for Turkish State Railways, which is part of the Rail Transit Systems research program funded by The National Research Institute of Electronics and Cryptology (TUBITAK BILGEM). We thank all project partners for their work and contributions to the project.
 
 
 

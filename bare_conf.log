@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.7.7)  14 APR 2016 11:16
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.7.7)  14 APR 2016 15:20
 entering extended mode
  %&-line parsing enabled.
 **bare_conf.tex
@@ -191,24 +191,6 @@ ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
 \c@ContinuedFloat=\count99
 Package caption Info: subfigure package is loaded.
 ) (./bare_conf.aux
-
-LaTeX Warning: Label `fig:smclass' multiply defined.
-
-
-LaTeX Warning: Label `fig:smclass' multiply defined.
-
-
-LaTeX Warning: Label `fig:smclass' multiply defined.
-
-
-LaTeX Warning: Label `fig:smclass' multiply defined.
-
-
-LaTeX Warning: Label `fig:smclass' multiply defined.
-
-
-LaTeX Warning: Label `fig:smclass' multiply defined.
-
 
 LaTeX Warning: Label `fig:smclass' multiply defined.
 
@@ -1286,6 +1268,18 @@ Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¼ in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no  in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no  in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¼ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
@@ -1505,13 +1499,10 @@ Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no Ÿ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
-<syysquenceDiagram.jpg, id=10, 458.71375pt x 443.6575pt>
-File: syysquenceDiagram.jpg Graphic file (type jpg)
+<syySequenceDiagram.jpg, id=10, 317.68687pt x 283.0575pt>
+File: syySequenceDiagram.jpg Graphic file (type jpg)
 
-<use syysquenceDiagram.jpg>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+<use syySequenceDiagram.jpg>
 <syygrafic.jpg, id=11, 1864.9675pt x 1022.82124pt>
 File: syygrafic.jpg Graphic file (type jpg)
  <use syygrafic.jpg>
@@ -1576,6 +1567,7 @@ Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
+[2 <./simyasamdongusu.jpg> <./syySequenceDiagram.jpg>]
 Missing character: There is no Ã in font ptmri7t!
 Missing character: There is no ¼ in font ptmri7t!
 Missing character: There is no Ã in font ptmri7t!
@@ -1596,6 +1588,10 @@ Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¼ in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no  in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
@@ -1710,12 +1706,10 @@ Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no Ÿ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
-<smgrafic.jpg, id=12, 303.1325pt x 144.54pt>
+
+<smgrafic.jpg, id=16, 303.1325pt x 144.54pt>
 File: smgrafic.jpg Graphic file (type jpg)
  <use smgrafic.jpg>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Missing character: There is no Å in font ptmri7t!
 Missing character: There is no Ÿ in font ptmri7t!
 Missing character: There is no Ã in font ptmr7t!
@@ -1968,10 +1962,25 @@ Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no Ÿ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
-[2 <./simyasamdongusu.jpg>] <smcom.jpg, id=17, 268.00125pt x 400.49625pt>
-File: smcom.jpg Graphic file (type jpg)
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no  in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
 
-<use smcom.jpg>
+<smCommunicationDiagram.jpg, id=17, 484.05844pt x 502.87875pt>
+File: smCommunicationDiagram.jpg Graphic file (type jpg)
+
+<use smCommunicationDiagram.jpg>
 Missing character: There is no Ã in font ptmri7t!
 Missing character: There is no ¼ in font ptmri7t!
 Missing character: There is no Å in font ptmri7t!
@@ -1980,6 +1989,18 @@ Missing character: There is no Ã in font ptmri7t!
 Missing character: There is no ¼ in font ptmri7t!
 Missing character: There is no Ã in font ptmri7t!
 Missing character: There is no ¼ in font ptmri7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no  in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¼ in font ptmr7t!
 Missing character: There is no Å in font ptmr7t!
@@ -2124,11 +2145,12 @@ Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
- [3 <./syysquenceDiagram.jpg> <./syygrafic.jpg> <./smgrafic.jpg> <./smcom.jpg>]
- <sddiagram.jpg, id=21, 463.7325pt x 427.5975pt>
-File: sddiagram.jpg Graphic file (type jpg)
 
-<use sddiagram.jpg>
+<RepresentationSDDiagram.jpg, id=18, 332.74312pt x 295.85532pt>
+File: RepresentationSDDiagram.jpg Graphic file (type jpg)
+
+<use RepresentationSDDiagram.jpg> [3 <./syygrafic.jpg> <./smgrafic.jpg> <./smCo
+mmunicationDiagram.jpg>]
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ° in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
@@ -2211,6 +2233,18 @@ Missing character: There is no € in font ptmr7t!
 Missing character: There is no  in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no  in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no Ÿ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
@@ -2267,13 +2301,10 @@ Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no § in font ptmr7t!
 Missing character: There is no Å in font ptmr7t!
 Missing character: There is no Ÿ in font ptmr7t!
- <sdBaglanti.jpg, id=22, 628.3475pt x 366.36874pt>
-File: sdBaglanti.jpg Graphic file (type jpg)
+ <SDDiagram.jpg, id=22, 492.33937pt x 275.52937pt>
+File: SDDiagram.jpg Graphic file (type jpg)
 
-<use sdBaglanti.jpg>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+<use SDDiagram.jpg>
 Missing character: There is no Ã in font ptmri7t!
 Missing character: There is no – in font ptmri7t!
 Missing character: There is no Ã in font ptmri7t!
@@ -2451,9 +2482,10 @@ Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
-<ogrenci.jpg, id=23, 4336.2pt x 903.375pt>
+ <ogrenci.jpg, id=23, 4336.2pt x 903.375pt>
 File: ogrenci.jpg Graphic file (type jpg)
- <use ogrenci.jpg>
+
+<use ogrenci.jpg>
 Missing character: There is no Å in font ptmri7t!
 Missing character: There is no Ÿ in font ptmri7t!
 Missing character: There is no Å in font ptmr7t!
@@ -2637,10 +2669,10 @@ Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
-
-<genisekran.jpg, id=24, 5781.6pt x 1626.075pt>
+ <genisekran.jpg, id=24, 5781.6pt x 1626.075pt>
 File: genisekran.jpg Graphic file (type jpg)
- <use genisekran.jpg>
+
+<use genisekran.jpg>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2777,10 +2809,12 @@ Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¼ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
-[4 <./sddiagram.jpg> <./sdBaglanti.jpg> <./ogrenci.jpg>]
-<egitmen.jpg, id=28, 4336.2pt x 903.375pt>
+<egitmen.jpg, id=25, 4336.2pt x 903.375pt>
 File: egitmen.jpg Graphic file (type jpg)
  <use egitmen.jpg>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Missing character: There is no Ã in font ptmri7t!
 Missing character: There is no œ in font ptmri7t!
 Missing character: There is no Ã in font ptmri7t!
@@ -2917,6 +2951,7 @@ Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
+[4 <./RepresentationSDDiagram.jpg> <./SDDiagram.jpg> <./ogrenci.jpg>]
 Missing character: There is no Ã in font ptmri7t!
 Missing character: There is no ¶ in font ptmri7t!
 Missing character: There is no Ã in font ptmr7t!
@@ -3182,6 +3217,86 @@ Missing character: There is no § in font ptmr7t!
 <treggraph.jpg, id=29, 1177.39874pt x 820.56563pt>
 File: treggraph.jpg Graphic file (type jpg)
  <use treggraph.jpg>
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no Ÿ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+
+<20160414_105046.jpg, id=30, 4143.48pt x 2330.7075pt>
+File: 20160414_105046.jpg Graphic file (type jpg)
+
+<use 20160414_105046.jpg> [5 <./genisekran.jpg> <./egitmen.jpg> <./treggraph.jp
+g> <./20160414_105046.jpg>]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no œ in font ptmr7t!
@@ -3191,7 +3306,6 @@ Missing character: There is no  in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
- [5 <./genisekran.jpg> <./egitmen.jpg> <./treggraph.jpg>]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no œ in font ptmr7t!
@@ -3221,10 +3335,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2863 strings out of 495061
- 47589 string characters out of 1182622
- 121042 words of memory out of 3000000
- 6061 multiletter control sequences out of 15000+50000
+ 2875 strings out of 495061
+ 48004 string characters out of 1182622
+ 118042 words of memory out of 3000000
+ 6072 multiletter control sequences out of 15000+50000
  33007 words of font info for 62 fonts, out of 3000000 for 9000
  31 hyphenation exceptions out of 8191
  36i,7n,38p,1297b,239s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3233,9 +3347,9 @@ ve/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/typ
 e1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a
 .pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
 mf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bare_conf.pdf (6 pages, 3423621 bytes).
+Output written on bare_conf.pdf (6 pages, 6408834 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
+ 54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
