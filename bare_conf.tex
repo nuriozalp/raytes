@@ -379,20 +379,18 @@ Email: {(nuri.ozalp, ahmet.basgoze, ozdemir.kavak, burcu.kalkan)}@tubitak.gov.tr
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-Computer Simulations can be considered as a powerful tools for learning such as analysing, designing and interacting. Especially in the vital criticality level it has become more important tools such as train traffic simulation.
-The most important purposes of the train control simulation systems are to prevent train collisions with other trains and keeping them in safe range.
+Computer Simulations can be considered as a powerful tools for learning such as analysing, designing, and interacting. Especially in the vital criticality level it has become more important tools such as train traffic simulation.
+The most important purpose of the train control system to prevent train collisions with other trains, keeping them in safe range.
 
-The purpose of this study is to provide train traffic control in a distributed simulation system. The system consists of an instructor, five students and a scenario-editor. The system use real train route model located in Turkey.  During the simulation, dispatchers console can controls train traffic which have different size and speed in railway system. Success in educational outcomes can be measured and sorted out with useful reports and visual modules in simulation system. Instructor console make decisions about the organization of teaching and learning experiences, classroom management, and responses to individual students. The Instructor is also able to monitor and track the progress of five targeted students throughout the course of the simulation. 
+The purpose of this study is to provide train traffic control in a distributed simulation system. The system consists of an instructor five students and a scenario-editor. The system use real train route model located in Turkey.  During the simulation, dispatchers console can controls train traffic which have different  size and speed in system. Success in educational outcomes can be measured. Instructor console make decisions about the organization of teaching and learning 
+experiences, classroom management, and responses to 
+individual students. The user is able to monitor and track the progress of five targeted students throughout the course of the simulation. 
 \end{abstract}
 
 \section{INTRODUCTION}
 Trenler taşımacılıkta çok önemli bir yere sahiptir. Tren trafiği kontrol sistemleri çok kritik sistemlerdir. Tren trafiğini yönetenlere dispeçer denilmektedir. Dispeçerin amaçları trenleri güvenle ve zamanında varması gereken hedeflere ulaştırmaktır.
 
-Trains have a very important role in transportation. Train traffic control systems are very critical systems. They are called dispathers who manage and route train traffic. Dispathers responsibility is to bring the train arriving  destination safely and on time.
-
-Anlık konum eski model trenlerde bilinmemektedir. Sinyalizasyon sistemleri sayesinde trenlerin yaklaşık konumları 3km civarında tahmin edilebilmektedir. Bu nedenle tren trafiği kritik olmaktadır. Son yıllarda dispeçer eğitimi sefer sayılarının artması ve tren yollarının artması ile daha da önem kazanmıştır. Dispeçerlerin gerçek sistemde tecrübe edinmeleri uzun zaman almakla birlikte risk oluşturmaktadır. Bu nedenle birçok eğitim simulasyonu geliştirilmiştir. Özellikle kontrol merkezlerinde birden çok dipeçerin birlikte çalışmasından dolayı dağıtık yapılı ve birden çok kullanıcılı simulasyonlar önem kazanmıştır. Bu sayede tek bir simulasyonda hazırlanan yoğun trafikli seneryo ile birden çok dispeçerin birlikte tren trafiği yönetmesi ve birçok problemle başa çıkması önem arz etmektedir. 
-
-Instant position is not known in the old model trains. With the approximate location of the train signaling system can be estimated at around 3km. Therefore, train traffic is critical. With the increasing number of ways to increase the number of flights and train dispatcher training has gained more importance in recent years. Dispatcher they acquire experience in the real system takes a long time. Therefore, it developed many training simulation. In particular, due to the multiple control centers dipeçer made to work together and distributed multiuser simulations have gained importance. In this way, prepared in a single high-traffic simulation to manage multiple dispatchers together with scenario-train traffic and it is important to deal with many problems.
+Anlık konum eski model trenlerde bilinmemektedir. Sinyalizasyon sistemleri sayesinde trenlerin yaklaşık konumları 3km civarında tahmin edilebilmektedir. Bu nedenle tren trafiği kritik olmaktadır. Son yıllarda dispeçer eğitimi sefer sayılarının artması ve tren yollarının artması ile daha da önem kazanmıştır. Dispeçerler gerçek sistemde tecrübe edinmeleri uzun zaman almaktadır. Bu nedenle birçok eğitim simulasyonu geliştirilmiştir. Özellikle kontrol merkezlerinde birden çok dipeçerin birlikte çalışmasından dolayı dağıtık yapılı ve birden çok kullanıcılı simulasyonlar önem kazanmıştır. Bu sayede tek bir simulasyonda hazırlanan yoğun trafikli seneryo ile birden çok dispeçerin birlikte tren trafiği yönetmesi ve birçok problemle başa çıkması önem arz etmektedir. 
 
 Bu çalışmada dispeçerlerin yoğun trafiğin olduğu, hızları ve türleri farklı olan trenlerin bulunduğu ve sahada meydana gelebilecek problemlerin simüle edildiği birbirinden farklı seneryolar ile eğitim almaları sağlanmıştır. Bu sayede daha kısa sürede alanında uzmanlaşabilmesi hedeflenmiştir. Geliştirilen simülasyon sistemi 5 modülden oluşmaktadır. Bunlar eğitmen, öğrenci, seneryo editörü ve değerlendirme modülü ve tren graf modülüdür. Seneryo editörü ile istenilen arazi hazırlanmakta ve istenilen bütün kötü koşullar bu arazide oluşturulmakta ve istediği kadar değişik konumlarda tren ekleyebilmektedir. Eğitmen ister tek simülasyon isterse farklı 5 simülasyon aynı anda başlatabilmekte ve simülasyonlara müdahele edebilmektedir. İstediği zaman snapshot ile eğitimde bazı önemli gördüğü yerleri tekrar tekrar öğrencilere tecrübe ettirebilmektedir. Öğrenciler yetkileri ölçüsünde sorumlu olduğu alanda tren trafiğini yönetebilmekte ve meydana gelen arızaların çözümü için çalışmalar yapabilmektedir. Anlık tren hareketlerini aynı zamanda trengraf ile takip edebilmektedir. Eğitim sonunda değerlendirme yapılabilmekte ve yetiştirilen dispeçerin başarısı ölçülebilmektedir.
 
@@ -541,9 +539,9 @@ Mesajlaşma ve iletişimi sağlayacak olan ana modül iki modda çalışabilmekt
 
 \subsection{ÖK Öğrenci Konsolu}
 
-Öğrenci Konsolu (ÖK) bir Öğrenci Bilgisayarı (ÖBÜ) ve bir Sesli Haberleşme Cihazı (SHC) alt donanım bileşenlerden oluşmaktadır. ÖK’nin yapısı Şekil 2 de gösterilmiştir.
-Öğrenci Bilgisayarı bilgisayar kasası, fare, klavye ve LCD ekran donanımlardan oluşmaktadır. Bilgisayar üzerinde Windows 7 işletim sistemi kuruludur. Öğrenci Konsol Yönetimi (ÖKY) yazılım modülü üst seviye modül olup öğrenci konsolunun genel işlevlerinden sorumludur. Dispeçer arayüz uygulamasını KM Client (KMC) modülü gerçekleştirmektedir. Ekranların video görüntü kayıtları Video Kayıt Altyapı (VKA) modülü tarafından kaydedilmektedir.
-Sesli Haberleşme Cihazı dispeçerin sesli iletişimini sağlamak için gerekli mikrofon, kulaklık veya ahize ile donatılacaktır. Üzerinde çalışan Sesli Haberleşme Yazılım Modülü (SHY) eğitim amaçlarına uygun biçimde arama yapmayı, aranmayı destekleyecektir.
+Öğrenci Konsolu (ÖK) bir Öğrenci Bilgisayarı (ÖBÜ) ve bir Sesli Haberleşme Cihazından (SHC) alt donanım bileşenlerden oluşmaktadır. ÖK’nin yapısı Şekil \ref{fig:ogrenci}'de gösterilmiştir.
+Öğrenci Bilgisayarı bilgisayar kasa, fare, klavye ve LCD ekran donanımlardan oluşmaktadır. Bilgisayar üzerinde Windows 7 işletim sistemi kuruludur. Öğrenci Konsol Yönetimi (ÖKY) yazılım modülü üst seviye modül olup konsolunun genel işlevlerinden sorumludur. Dispeçer arayüz uygulamasını KM Client (KMC) modülü gerçekleştiriyor. Ekranların video görüntü kayıtları Video Kayıt Altyapı (VKA) modülü tarafından gerçekleştiriliyor.
+Sesli Haberleşme Cihazı dispeçerin sesli iletişimini sağlamak için gerekli mikrofon, kulaklık veya telefon ahize ile donatılacaktır. Üzerinde çalışan Sesli Haberleşme Yazılım Modülü (SHY) eğitim amaçlarına uygun biçimde arama yapmayı, aranmayı destekleyecektir. 
 
 \begin{figure}[h!]
   \centering
@@ -558,28 +556,16 @@ Sesli Haberleşme Cihazı dispeçerin sesli iletişimini sağlamak için gerekli
 
 Geniş Ekran Konsolu (GEK) bir Geniş Ekran Bilgisayar Ünitesi (ÖBÜ) ve bir Geniş Ekran Duvar Ünitesi (GDÜ) donanım bileşenlerden oluşmaktadır.GEK’in yapısı Şekil 3 de gösterilmiştir.
 Geniş Ekran Bilgisayar Ünitesi (GBÜ) çok çıkışlı ekran kartı ile donatılmış olup, her çıkış Geniş Ekran Duvar ünitesinin birer ekranına bağlıdır. Bilgisayar üzerinde Geniş Ekran Konsol Yönetimi (GKY) yazılımı çalışmaktadır. Bu yazılım Dispeçer arayüz uygulaması olan KM Client (KMC), Video Kayıt Altyapı (VKA) ve Video Geri Oynatma Aracı (VGO) modüllerin çalıştırılması ve kontrol edilmesinden sorumludur.
-Geniş Ekran Duvar Ünitesi (GDÜ) iki satır dört sütün düzenine göre yerleştirilmiş 8 LCD ekranlık görüntüleme duvarıdır.
-
-\begin{figure}[h!]
-  \centering
-  % Requires \usepackage{graphicx}
-  \includegraphics[width=8cm,height=5cm]{genisekran.jpg}
-  \caption{Representation of Wide Screen Console for 2 students}\label{fig:smclass}
-\end{figure}
+Sesli Haberleşme Cihazı eğitmenin sesli iletişimini sağlamak için gerekli mikrofon, kulaklık veya telefon ahize ile donatılacaktır. Üzerinde çalışan Sesli Haberleşme Yazılım Modülü (SHY) eğitim amaçlarına uygun biçimde arama yapmayı, aranmayı destekleyecektir.
+Şekil \ref{fig:genisekranSonuc}'de geniş ekrana ait deney sonucundaki ekran göüntüsü görülmektedir.
 
 
 \subsection{Eğitmen Konsolu}
 
 Eğitmen Konsolu (EK) bir Eğitmen Bilgisayar Ünitesi (EBÜ) ve bir Geniş Ekran Duvar Ünitesi (GDÜ) donanım bileşenlerden oluşmaktadır. EK’nin yapısı Şekil 4 de gösterilmiştir.
-Eğitmen Bilgisayar Ünitesi (EBÜ), Öğrenci Bilgisayar Ünitesi (ÖBÜ) ile aynı özelliklere sahiptir. Öğrenci Bilgisayar Ünitesinde olduğu gibi bilgisayar kasası, fare, klavye ve LCD ekran donanımlarından oluşmaktadır. Bilgisayar üzerinde Windows 7 işletim sistemi kuruludur. Bilgisayar üzerinde Eğitmen Konsol Yönetimi (EKY) yazılımı çalışmaktadır. Bu yazılım  Eğitmen Simülasyon Yönetim (ESY), Eğitmen Saha Müdahale (ESM), ve Video Geri Oynatma (VGO) modüllerin çalıştırılması ve kontrol edilmesinden sorumludur.
+Eğitmen Bilgisayar Ünitesi (EBÜ) kasa, fare, klavye ve LCD ekran donanımlardan oluşmaktadır. Bilgisayar üzerinde Windows 7 işletim sistemi kuruludur. Bilgisayar üzerinde Eğitmen Konsol Yönetimi (EKY) yazılımı çalışmaktadır. Bu yazılım  Eğitmen Simülasyon Yönetim (ESY), Eğitmen Saha Müdahale (ESM), ve Video Geri Oynatma (VGO) modüllerin çalıştırılması ve kontrol edilmesinden sorumludur.
+Geniş Ekran Duvar Ünitesi (GDÜ) iki satır dört sütün düzenine göre yerleştirilmiş 8 LCD ekranlık görüntüleme duvardır. Şekil \ref{fig:egitmenSonuc}'de eğitmen paneli ile yapılan deneye ait ekran görüntüsü yer almaktadır.
 
-
-\begin{figure}[h!]
-  \centering
-  % Requires \usepackage{graphicx}
-  \includegraphics[width=8cm,height=5cm]{egitmen.jpg}
-  \caption{Representation of Instracture Console with 2 active students}\label{fig:smclass}
-\end{figure}
 
 \subsection{SSÜ Simülasyon Sunucu Ünitesi}
 
@@ -604,37 +590,55 @@ Raytes Projesi kapsamında geliştirilen Trengraf bileşeni, tren hareket kayıt
 \end{itemize}
 
 Bu seçeneklerin hangilerinin gösterileceği kullanıcı tarafından seçilebilmektedir.
-
-\begin{figure}[h!]
-  \centering
-  % Requires \usepackage{graphicx}
-  \includegraphics[width=8cm,height=5cm]{treggraph.jpg}
-  \caption{Representation of Train Graph}\label{fig:smclass}
-  
-\end{figure}
+Şekil \ref{fig:trenGrapSonuc}'de tren grafa ait çalıştırılan deney sonucundaki ekran göüntüsü görülmektedir.
 
 
 \section{EXPERIMENT RESULT}
-Geliştirdiğimiz dağıtık yapılı 5 öğrencinin aynı anda eğitim alabildiği RAYTES projemizi 2 şekilde test ettik. Bunlardan ilki 20 tren ve tek simülasyon 5 kullanıcı yetkisi dahilinde 1 saatlik seneryoda eğitim aldılar. 
-
-Diğer testimizide 1'er saatilik 5 ayrı simülasyon ve her simülasyona bir öğrenci atanarak gerçekleştirdik.
-
-
-Deneyler sonucunda elde edilen tren hareketlerini gösteren tren graf şekildeki gibi olmaktadır. 
-
-toplam cpu kullanımı aşağıdaki gibi yer almaktadır.
-
-
-
+Geliştirdiğimiz dağıtık yapılı 5 öğrencinin aynı anda eğitim alabildiği RAYTES projemizi 2 şekilde test ettik. Bunlardan ilki 20 tren ve tek simülasyon 5 kullanıcı yetkisi dahilinde 1 saatlik seneryoda eğitim aldılar. Toplam RAM ve CPU kullanımı Şekil \ref{fig:hepsibir}'de gösterilmiştir
 
 
 \begin{figure}[h!]
   \centering
   % Requires \usepackage{graphicx}
-  \includegraphics[width=8cm]{20160414_105046.jpg}
-  \caption{Representation of Dispetcher Education}\label{fig:smclass}
+  \includegraphics[width=8cm]{hepsibir.png}
+  \caption{Tek simülasyon ve 5 farklı öğrenci ile yapılan eğitime ait modüllerin kaynak kullanımını göstermektedir}\label{fig:hepsibir}
   
 \end{figure}
+
+Diğer testimizde 1'er saatilik 5 ayrı simülasyon ve her simülasyona bir öğrenci atandı. Bu şekilde eğitim aldılar. Toplam RAM ve CPU kullanımı Şekil \ref{fig:hepsiayri}'de gösterilmiştir
+
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{hepsiayri.png}
+  \caption{5 farklı simülasyon ve 5 farklı öğrenci ile yapılan eğitime ait modüllerin kaynak kullanımını göstermektedir}\label{fig:hepsiayri}
+  
+\end{figure}
+
+Deneyler sonucunda elde edilen tren hareketlerini gösteren tren graf şekildeki gibi olmaktadır. 
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{trenGrapSonuc.jpg}
+  \caption{Tren hareketlerinin gösterimi}\label{fig:trenGrapSonuc}
+  
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{egitmenSonuc.jpg}
+  \caption{5 farklı simülasyon ve 5 farklı öğrenci ile yapılan eğitimin eğitmen konsolunda gösterimi}\label{fig:egitmenSonuc}
+  
+\end{figure}
+\begin{figure}[h!]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{genisekranSonuc.jpg}
+  \caption{4 farklı kullanıcıya ait ekran görüntülerinin geniş ekranda gösterimi}\label{fig:genisekranSonuc}
+  
+\end{figure}
+
+
 \section{Conclusion}
 Computer Simulations can be considered as a powerful tools for learning such as analysing, designing, and interacting. Especially in the vital criticality level it has become more important tools such as train traffic simulation.
 The most important purpose of the train control system to prevent train collisions with other trains, keeping them in safe range.
