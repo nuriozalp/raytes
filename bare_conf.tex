@@ -39,46 +39,47 @@ individual students. The user is able to monitor and track the progress of five 
 
 \section{INTRODUCTION}
 Kara ve Demiryolu taşımacılığında önemli bir yeri bulunan tren, bir ya da birkaç lokomotif tarafından çekilen, itilen ve vagonlardan oluşan bir ulaşım aracıdır. Ulaşım ve taşımacılık anlanlarında trenlerin çok önemli bir yere sahip olduğu bilinen bir gerçektir. 
-Artan demiryolu trafiği sonucunda Dünya genelinde değişik trafik kontrol sistemleri geliştirilmiştir. Dünyada tren trafiği yönetim metotlarının farklı birçok merkezi tren trafik kontrol sistemleri vardır.
+Artan demiryolu trafiği sonucunda Dünya genelinde değişik trafik kontrol sistemleri geliştirilmiştir. Tren trafiği yönetim metotlarının dünyada birçok farklı merkezi tren trafik kontrol sistemleri vardır.
 
-Demiryolu trafiği yönetimi için kullanılan sistemler merkezi kontrol sistemleri olup, kontrolörler (dispeçer) tarafından idare edilmektedir.  Dispeçerlerin amaçları trenleri güvenle ve zamanında varması gereken hedeflere ulaştırmaktır.
+Demiryolu trafiği yönetimi için kullanılan sistemler merkezi kontrol sistemleri olup, kontrolörler (dispeçer) tarafında idare edilmektedir.  Dispeçerlerin amaçları trenleri güvenle ve zamanında varması gereken hedeflere ulaştırmaktır.
 
-Tren trafiği kontrol sistemleri çok kritik sistemlerdir.Anlık konum bilgisi eski model trenlerde bilinmemektedir.Sinyalizasyon sistemleri sayesinde trenlerin yaklaşık konumları 3km civarında tahmin edilebilmektedir. Bu nedenle tren trafiği kritik olmaktadır. Son yıllarda dispeçer eğitimi sefer sayılarının  ve tren yollarının artması ile daha da önem kazanmıştır. Dispeçerlerin gerçek tren trafiği üzerinde çalışarak tecrübe kazanmaları uzun zaman almakla birlikte birtakım riskleride beraberinde getirmektedir. Bu nedenle eğitim simülasyon sistemlerine ihtiyaç duyulmaktadır ve bu konuda birçok eğitim simulasyonu geliştirilmiştir. Özellikle kontrol merkezlerinde birden çok dipeçerin birlikte çalışmaları gerekmesinden dolayı dağıtık yapılı ve birden çok kullanıcılı simulasyonlar önem kazanmıştır. Bu sayede tek bir simulasyonda hazırlanan yoğun trafikli senaryo ile birden çok dispeçerin birlikte tren trafiğini yönetmesi ve birçok problemle başa çıkması önem arz etmektedir. 
+Tren trafiği kontrol sistemleri çok kritik sistemlerdir.Anlık konum bilgisi eski model trenlerde bilinmemektedir. Sinyalizasyon sistemleri sayesinde trenlerin yaklaşık konumları 3km civarında tahmin edilebilmektedir. Bu nedenle tren trafiği kritik olmaktadır. Son yıllarda dispeçer eğitimi sefer sayılarının artması ve tren yollarının artması ile daha da önem kazanmıştır. Dispeçerlerin gerçek tren trfiği üzerinde çalışarak tecrübe kazanmaları hemuzun zaman almakta hem de birtakım riskleri beraberinde getirmektedir. Bu nedenle eğitim simülasyon sistemlerine ihtiyaç duyulmaktadır ve birçok eğitim simulasyonu geliştirilmiştir. Özellikle kontrol merkezlerinde birden çok dipeçerin birlikte çalışmasından dolayı dağıtık yapılı ve birden çok kullanıcılı simulasyonlar önem kazanmıştır. Bu sayede tek bir simulasyonda hazırlanan yoğun trafikli senaryo ile birden çok dispeçerin birlikte tren trafiği yönetmesi ve birçok problemle başa çıkması önem arz etmektedir. 
 
-Bu çalışmada dispeçerlerin geliştirilen simülasyon sistemi altyapısı kullanılarak eğitilmesi ve gerçek tren trafiği yönetimine hazır hale getirilmesi ve daha kısa sürede alanında uzmanlaşabilmesi hedeflenmiştir. Simülasyon ortamında yoğun trafikli, farklı tip ve hızlardaki trenlerin bulunduğu demiryolu sahası oluşturularak bu saha üzerinde meydana gelebilecek problemler oluşturulmakta ve yapılan tüm bu işlemler senaryo olarak kaydedilmektedir. Kaydedilen senoryolar eğitmen tarafından açılarak aynı anda 5 öğrenciye kadar eğitim verilmesine ve sonrasında öğrencilerin performansları gerçkeleştirdikleri işlemler doğrultusunda değerlendirilerek karne verilmesine imkan sağlamaktadır.
-
-Geliştirilen simülasyon siteminde  Türkiye'deki 3 farklı tipteki gerçek tren hattı çizimleri yapılmış ve sisteme tanıtılmıştır. Bunlarda 1 tanesi hızlı tren hattı, bir diğeri banliyo hattı ve sonuncusu geleneksel tren hattından oluşmaktadır. 3 farklı tipteki tren hattına ait karakterisitik farklılıklar kullanılarak öğrencilerin bu doğrultuda eğitilmesi halihazırdaki sistem tarafından gerçekleştirilmektedir.
+Bu çalışmada dispeçerlerin geliştirilen simülasyon sistemi altyapısı kullanılarak eğitilmesi ve gerçek tren trafiği yönetimine hazır hale getirilmesi ve daha kısa sürede alanında uzmanlaşabilmesi hedeflenmiştir. Simülasyon ortamında yoğun trafikli, farklı tip ve hızlardaki trenlerin bulunduğu demiryolu sahası oluşturularak bu saha üzerinde meydana gelebilecek problemler oluşturulmakta ve yapılan tüm bu işlemler senaryo olarak kaydedilmektedir. Kaydedilen senoryolar eğitmen tarafından açılarak aynı anda 5 öğrenciye kadar eğitim verilmesine ve sonrasında öğrencilerin performanslarının  değerlendirilerek karne verilmesine imkan sağlamaktadır.
 
 Geliştirilen simülasyon sistemi 5 modülden oluşmaktadır. 
 Bunlar; 
-\begin{itemize}
-\item eğitmen konsolu,
-\item öğrenci konsolu, 
-\item seneryo editörü,
-\item performans değerlendirme modülü,
-\item tren graf modülüdür. 
-\end{itemize}
+. eğitmen konsolu, 
+. öğrenci konsolu, 
+. seneryo editörü, 
+. performans değerlendirme modülü,
+. tren graf modülüdür. 
 
+Seneryo editörü ile istenilen arazi hazırlanmakta ve istenilen bütün koşullar bu arazide oluşturulmakta ve istediği kadar değişik konumlarda tren eklenebilmektedir. Eğitmen ister tek simülasyon isterse farklı 5 simülasyon aynı anda başlatabilmekte ve simülasyonlara müdahele edebilmektedir. İstediği zaman snapshot ile eğitimde bazı önemli gördüğü yerleri tekrar tekrar öğrencilere tecrübe ettirebilmektedir. Öğrenciler yetkileri ölçüsünde sorumlu olduğu alanda tren trafiğini yönetebilmekte ve meydana gelen arızaların çözümü için çalışmalar yapabilmektedir. Anlık tren hareketlerini aynı zamanda trengraf ile takip edebilmektedir. Eğitim sonunda değerlendirme yapılabilmekte ve yetiştirilen dispeçerin başarısı ölçülebilmektedir.
 
-Seneryo editörü ile istenilen arazi hazırlanmakta ve istenilen kadar farklı konumlara tren eklenebilmekte ve istenilen bütün koşullar bu arazide oluşturulmaktadır.Arazide oluşturulabilecek koşullar çarpışma, bölge zaman izni, deray, kırmızı sinyal ihlali, kırmızı geçiş, lokomotif arızası, tren/vagon kaçması, sinyal arızası, makas arızası, sürat tecavüzü, hemzemin geçit arızası gibi durumları içermektedir. Oluşturulan senaryo ile eğitmen ister tek simülasyon isterse farklı 5 simülasyon olarak aynı anda başlatabilmekte ve simülasyonlara müdahele edebilmektedir. İstediği zaman snapshot ile eğitimde bazı önemli gördüğü yerleri tekrar tekrar öğrencilere tecrübe ettirebilmektedir. Öğrenciler yetkileri ölçüsünde sorumlu olduğu alanda tren trafiğini yönetebilmekte ve meydana gelen arızaların çözümü için çalışmalar yapabilmektedir. Simülasyondaki trenlerin anlık hareketleri aynı zamanda trengraf ile takip edebilmektedir. Eğitim sonunda eğitmen öğrencilerin performansını ölçmek amaçlı değerlendirme yapılabilmekte ve yetiştirilen dispeçerin başarısı puanlama sistemi ve başarılı/başarısız olarak ölçülebilmektedir.
-
-2. bölümde related work ler ile ilgili , 3. bölümde sistemin haberleşme alt yapısı hakkında bilgiler verilmiştir. 4. Bölümde sisteme ait 5 modülden bahsedilmiştir. 5. modülde sistem üzerinde yapılan deney ve sonuçları hakkında bilgiler yer almaktadır. 6.bölümde ise sonuç kısmına yer verilmiştir.
+2. bölümde related wwork, 3. bölümde sistemin nasıl haberleşme alt yapısı hakkında bilgi verilmiştir. 4. Bölümde sisteme ait 5 modülden bahsedilmiştir. 5. modülde yapılan deney hakkında bilgiler yer almaktadır. 6.  bölümde ise sonuç kısmına yer verilmiştir.
 
 
 \section{RELATED WORK}
 
-Tren trafiğini yöneten ve birden çok dispeçerin eğitim aldığı dağıtık yapılı simülasyonlar yaygın olarak kullanılmaktadır.Benzer çalışmalara bu bölümde yer verilmiştir.
+Tren trafiğini yöneten ve birden çok dispeçerin eğitim aldığı dağıtık yapılı simülasyonlar henüz yaygın olarak kullanılmaktadır. Bizim yaptığımız çalışmaya benzer çalışmalara bu bölümde yer verilmiştir.
 
 In Middelkoop and his friend study is a simulator which which stands for Flexible Rail Infra Simulation of Operations (FRISO). It includes automatized  a simulation model by using a connection to database, editor including generator functions and the possibility to perform single and multiple (stochastic) simulation experiments. FRISO models include following elements  track layout, signalling system, route setting, and interlocking. Our system presents multiple screen of regions and to let five students to work at same or different simulation at the same time \cite{FRISO}.
+
+ 
 
 
 In Baohua  and his friend's study is about  multi-train simulator. It is able to do  train performances assessment at the given railway lines, signal layouts optimization, energy-efficient operating strategies , in major terminals exploration of traffic bottlenecks, the evaluation of the reliability of scheduled timetables and train delay propagation. In multi-train simulation does these automatically, in our system dispatcher conduct them \cite{ICVES}.
 
 
+
+
 \section{SYSTEM DESIGN}
 \subsection{Simülasyon Yaşam Döngüsü}
 
-RAYTES sistemi beş bağımsız simülasyon ortamını eşzamanlı ve birbirinden bağımsız olarak yürütebilmektedir. Aşağıdaki gösterilen Şekil \ref{fig:simyasamdongusu}' deki yaşam döngüsü bir simülasyon ortamını temsil etmektedir. Sistem ilk çalıştırıldğında IDLE durumda bulunmaktadır. Bir senaryo sisteme yüklenerek simülasyon oturumu oluşturulduğunda LOADED durumuna geçilir. Bu durumda simülasyon başlangıç saatinde beklemekte olup, çalışmaya hazır haldedir. Simülasyon çalıştırıldığında RUNNING durumuna geçer. RUNNING durumunda simülasyon saati ilerlemekte, simüle edilen nesneler zamana duyarlı biçimde akmakta ve insan arayüzlerinde sistem ile kullanıcılar arası etkileşim gerçeklenmektedir. Simülasyon herhangi bir zamanında duraksatılabilir, bu durumda simülasyon PAUSE durumuna geçer. PAUSE durumunda iken simülasyon saati ve simülasyon işlemleri geçici olarak durdurulur. PAUSE durumunda yine simülasyon RUNNING durumuna başlayabilir. Simülasyon sonlandırıldığında TERMINATED durumuna düşer ve simülasyon artık yeniden başlatılamaz.
+RAYTES sistemi beş bağımsız simülasyon ortamını eşzamanlı ve birbirinden bağımsız olarak yürütebilmektedir. Aşağıdaki gösterilen Şekil \ref{fig:simyasamdongusu}' deki yaşam döngüsü bir simülasyon ortamını temsil etmektedir. Sistem ilk çalıştırıldğında IDLE durumda bulunmaktadır. Bir senaryo sisteme yüklenerek simülasyon oturumu oluşturulduğunda LOADED durumuna geçilir. Bu durumda simülasyon başlangiç saatinde beklemekte olup, çalışmaya hazır haldedir. Simülasyon çalıştırıldığında RUNNING durumuna geçer, simülasyon saati ilerlemekte, simüle edilen nesneler zamana duyarlı biçimde işlenir, ve insan arayüzlerinde sistem ile kullanıcılar arası etkileşim gerçeklenmektedir. PAUSE durumunda simülasyon saati ve simülasyon işlemler geçici olarak durdurulur. PAUSE durumunda yine simülasyon RUNNING durumuna başlayabilir. Simülasyon sonlandırıldığında TERMINATED durumuna düşer ve simülasyon artık yeniden başlatılamaz.
+
+
 
 
 \begin{figure}[h!]
@@ -90,26 +91,26 @@ RAYTES sistemi beş bağımsız simülasyon ortamını eşzamanlı ve birbirinde
 
 \subsection{Comminication}
 \subsubsection{ Simulation Message}
-Simulation Message mesaj türü simülasyon sistemin üst seviye kumanda ve kontrol merkezi mesajlaşma türüdür. Bu mesajlar Eğitmen Konsolu’nda üretilmektedir ve sistemin diğer bileşenlerine gönderilmektedir. Simülasyon’un yaratılması, duraklatılması, snapshot alınması, gibi temel simülasyon komutlarını içermektedir. Ayrıca simülasyondaki sanal saha nesnelerinin durumlarına müdahale etmek amacıyla bir takım özel müdahale komutları tanımlıdır. Mesaj komutları Tablo 1 de verilmektedir.
+Simulation Message mesaj türü simülasyon sistemin üst seviye kumanda ve kontrol mesajlaşma türüdür. Bu mesajlar Eğitmen Konsolu’nda üretilmektedir ve sistemin diğer bileşenlerine gönderilmektedir. Simülasyon’un yaratılması, duraklatılması, snapshot alınması, gibi temel simülasyon komutlar içermektedir. Ayrıca simülasyondaki sanal saha nesnelerinin durumlarına müdahale etmek amacıyla bir takım özel müdahale komutlar tanımlıdır. Mesaj komutları Tablo 1 de verilmektedir.
 \subsubsection{Request Message}
-RequestMessage mesaj türü Kontrol Merkezi Client (KMC) modülünün Kontrol Merkezi Sunucu (KMS) modülüne gönderilen komutları taşımaktadır. KMC ve KMS arasındaki protokol “client-server” mimarisi olup RequestMessage komutları istemci tarafın sunucu tarafından hizmet isteği olarak değerlendirilmektedir. RequestMessage komutları Tablo x te listelenmektedir.
+RequestMessage mesaj türü Kontrol Merkezi Client (KMC) modülünün Kontrol Merkezi Sunucu (KMS) modülüne gönderilen komutları taşımaktadır. KMC ve KMS arasındaki protokol “client-server” mimarisi olup RequestMessage komutları istemci tarafın sunucu tarafından hizmet isteği olarak değerlendirilmektedir. RequestMessage komutları de listelenmektedir.
 
 \subsubsection{State Message}
 
-StateMessage mesajlar simülasyon çalışması esnasında sanal sahadaki tanımlı elemanların durum bilgilerinin iletilmesi için kullanılmaktadır. Kontrol Merkezi Sunucu (KMS) modülü StateMessage kullanlarak Kontrol Merkezi Client (KMC) modülüne saha bilgilerini göndermektedir. Kontrol Merkezi Sunucu ayriyetten saha görüntüleme ihtiyacı duyan Geniş Ekran Konsolu (GEK) ve Eğitmen Saha Müdahale (ESM) modüllerine de StateMessage vasıtasıyla bilgi göndermektedir.
+StateMessage mesajlar simülasyon çalışması esnasında sanal saha daki tanımlı elemanların durum bilgilerinin iletilmesi için kullanılmaktadır. Kontrol Merkezi Sunucu (KMS) modülü StateMessage kullanlarak Kontrol Merkezi Client (KMC) modülüne saha bilgilerini göndermektedir. Kontrol Merkezi Sunucu ayriyetten saha görüntüleme ihtiyacı duyan Geniş Ekran Konsolu (GEK) ve Eğitmen Saha Müdahale (ESM) modüllerine de StateMessage vasıtasıyla bilgi göndermektedir.
 
 \subsubsection{System Message}
-SystemMessage mesajlar Öğrenci Kontrol Yönetimi (ÖKY) ile Kontrol Merkezi Sunucu (KMS) modüller arası kullanılan mesajlaşmadır. Bu mesaj türü öğrenci olarak eğitim sistemine dahil olmak isteyen kullanıcıların giriş (login) yapmasını sağlamakta kullanılmaktadır.
+SystemMessage mesajlar Öğrenci Kontrol Yönetimi (ÖKY) ile Kontrol Merkezi Sunucu (KMS) modüller arası kullanılan mesajlaşmadır. Bu mesaj türü öğrenci kullanıcıların eğitim sistemine giriş (login) sağlamakta kullanılmaktadır.
 
 \subsection{Modbus}
-Modbus otomasyon sanayi çevrelerinde kabul görmüş bir ham veri iletişim protokoludür. Bu protokol “client-server” mantığında çalışıp sistemler arası bit dizilerin sorgulanması ve iletilmesinde kullanılmaktadır. RAYTES projesinde Modbus paketler UDP/IP üzerinden yazılım modülünden diğer modüllere iletilmektedir. Kontrol Merkezi Sunucu (KMS) modülü, Anklaşman Simülatör (AS) modülü, Saha Simülatör (SS) modülü ve Tren Simülatör (TS) modüller arası komut ve bilgi transferi Modbus paketler ile gerçekleşmektedir.
+Modbus otomasyon senayi çevrelerinde kabul görmüş bir ham veri iletişim protokolu. Bu protokol “client-server” mantığında çalışıp sistemler arası bit dizilerin sorgulanması ve iletilmesinde kullanılmaktadır. RAYTES projesinde Modbus paketler UDP/IP üzerinden yazılım modülünden modüle iletilmektedir. Kontrol Merkezi Sunucu (KMS) modülü, Anklaşman Simülatör (AS) modülü, Saha Simülatör (SS) modülü ve Tren Simülatör (TS) modüller arası komut ve bilge transferi Modbus paketler ile gerçekleşmektedir.
 
 
 \subsection{SSY Simülasyon Sunucu Yönetim Modülü}
-SSY yani Simülasyon Sunucu Yönetim modülü simülasyon sistemi içerisindeki tüm aktif modüllerin bağlı olduğu haberleşme altyapısının bulunduğu ve koordinasyonun sağlandığı modüldür.Şekil \ref{fig:syySequenceDiagram}'de squance diagram ve  Şekil \ref{fig:syygrafic}'de arayüzü gösterilmiştir.
+SSY yani Simülasyon Sunucu Yönetim modülü simülasyon sistemi içerisindeki tüm aktif modüllerin bağlı olduğu  haberleşme altyapısının ve koordinasyonun sağlandığı modüldür.Şekil \ref{fig:syySequenceDiagram}'de squance diagram ve  Şekil \ref{fig:syygrafic}'de arayüzü gösterilmiştir.
 Simülasyon akışı içerisinde doğrudan bir görevle sorumlu tüm aktif modüller bu modüle ya doğrudan ya da altında çalıştıkları ana modül üzerinden dolaylı olarak bağlı olmak zorundadır. Simülasyonun çalışması ve hazırlanması esnasında gerçekleşen tüm mesajlaşmalar bu modül üzerinden gerçekleşmektedir.
 SSY ayrıca sistemdeki aktif konsollar gibi kendi içerisindeki bilgileri uygun mesajlara karşılık olarak diğer konsollarla yada uygulamalarla paylaşabilmektedir.
-SSY mesajlaşma amacıyla tüm sistem elemanları gibi SD yani Simülasyon Destek ve Mesajlaşama Modülü’nü kullanmaktadır. Bu birim tüm giriş bilgilerini SD üzerinden almakta olup yine çıkış bilgilerini de SD üzerinden sisteme dağıtmaktadır. SD bu SSY üzerinde Mesaj Sunucu görevi ile tanımlanmış olarak kullanılmaktadır.
+SSY mesajlaşma amacıyla tüm sistem elemanları gibi SD yani Simülasyon Destek ve Mesajlaşama Modülü’nü kullanmaktadır. Bu birim tüm giriş bilgilerini SD üzerin almakta olup yine çıkış bilgilerini de SD üzerinden sisteme dağıtmaktadır. SD bu SSY üzerinde Mesaj Sunucu görevi ile tanımlanmış olarak kullanılmaktadır.
 SSY üzerine gelen herbir mesaj bir ön kontrolden geçirilerek mesaj ile ilgili yapılması gereken işleme karar verilir. SSY’nin bir mesaj üzerine yapacağı 4 işlem vardır;
 
 \begin{itemize}
@@ -118,6 +119,11 @@ SSY üzerine gelen herbir mesaj bir ön kontrolden geçirilerek mesaj ile ilgili
 \item Mesajın içeriği SSY ile ilgili ise SSY’den doğrudan cevap mesajı yollamak
 \item Mesajın hiyerarşik olarak göderilmesi gerekiyorsa bu hiyerarşinin sağlanması
 \end{itemize}
+
+
+
+
+
 
 \begin{figure}[h!]
   \centering
@@ -141,7 +147,7 @@ Hiyerarşik mesaj gönderimi bir mesajın, örneğin simülasyon yükleme mesaj�
 
 \subsection{SM Simülasyon Motor Modülü}
 \subsubsection{Sınıf Yapısı}
-Simülasyon Motoru (SM) modülündeki Şekil \ref{fig:smgrafic}'de gösterilen ana sınıf SimMotor sınıfıdır. Bu sınıf Config, XmlUtility, SahaEventList, FTSimManager::FTSimMgr ve Communicator::Client sınıfları bünyesinde yaratıp kullanmaktadır. FTSimMgr Saha Trafik Simülasyon Yönetimi (FTS) modülünde tanımlıdır. SimMotor sınıfı FTSimMgr sınıfın sağladığı arayüz üzerinden anklaşman, saha ve trafik simülasyon modellerine erişmektedir. Communicator modüllünde tanımlı Client sınıfı ise SimMotor sınıfına SimulationMessage mesajlaşma arayüz sağlamaktadır. SimMotorGui, SimMotor sınıfa debug ve test maksatlı grafik pencere arayüzü sağlamaktadır.
+Simülasyon Motoru (SM) modülündeki Şekil \ref{fig:smgrafic}'de gösterilen ana sınıf SimMotor sınıfıdır. Bu sınıf Config, XmlUtility, SahaEventList, FTSimManager::FTSimMgr ve Communicator::Client sınıfları bünyesinde yaratıp kullanmaktadır. FTSimMgr Saha Trafik Simülasyon Yönetimi (FTS) modülünde tanımlıdır. SimMotor sınıfı FTSimMgr sınıfın sağladığı arayüz üzerinden anklaşman, saha ve trafik simülasyon modellerinde erişmektedir. Communicator modüllünde tanımlı Client sınıfı ise SimMotor sınıfına SimulationMessage mesajlaşma arayüz sağlamaktadır. SimMotorGui, SimMotor sınıfa debug ve test maksatlı grafik pencere arayüzü sağlamaktadır.
 
 \begin{figure}[h!]
   \centering
@@ -153,10 +159,10 @@ Simülasyon Motoru (SM) modülündeki Şekil \ref{fig:smgrafic}'de gösterilen a
 
 
 \subsubsection{Mesajlaşma}
-Simülasyon Sunucu Yönetimi (SSY) ilk başladığında 5 adet bağımsız Simülasyon Motoru (SM) proses yaratır. Bu SM proses’ler sayesinde 5 bağımsız simülasyon eşzamanlı olarak SSY tarafından kontrol edilmesine olanak sağlar. SSY SimulasyonMessage tür mesajarı SM ye aktarmaktadır. Bu tür mesajlar, simülasyon yükle, sümülasyon başlat tarzında üst seviye kontrol mesajlarıdır. SM bu mesajları Saha Trafik Yönetimi (FTS) simülasyon modüllerine iletmektedir. Simülasyon modülü bu mesajların gerektirdiği işlemleri tamamladığında SM’ye yanıt (olumlu veya olumsuz) vermektedir ve bu netice SSY ye geri bildirilmektedir.
-LoadSimulation mesajı genel örnek olarak ele alınırsa; bu mesaj SM tarafından alındığında iki işlem tetiklemektedir. Birincisi, senaryo da oynatılması gereken önceden programlanmış olaylar veritabanından okunur ve Saha Event List (SEL) listesine yüklenmektedir. Bu olayların her biri bir Saha Event (SE) olarak tanımlanmıştır. 
+Simülasyon Sunucu Yönetimi (SSY) ilk başladığında 5 adet bağımsız Simülasyon Motoru (SM) proses yaratır. Bu SM proses’ler sayesinde 5 bağımsız simülasyon eşzamanlı olarak SSY tarafından kontrol edilmesine olanak sağlar. SSY SimulasyonMessage tür mesajarı SM ye aktarmaktadır. Bu tür mesajlar, simülasyon yükle, sümülasyon başlat tarzında üst seviye kontrol mesajlardır. SM bu mesajları Saha Trafik Yönetimi (FTS) simülasyon modüllerine iletmektedir. Simülasyon modülü bu mesajların gerektirdiği işlemleri tamamladığında SM’ye yanıt (olumlu veya olumsuz) vermektedir ve bu netice SSY ye geri bildirilmektedir.
+LoadSimulation mesajı genel örnek olarak ele alınırsa; bu mesaj SM tarafından alındığında iki işlem tetiklemektedir. Birincisi, senaryo da oynatılması gereken önceden programlanmış olaylar veritabanından okunuyor ve Saha Event List (SEL) listesine yüklenmektedir. Bu olayların her biri bir Saha Event (SE) olarak tanımlanmıştır. 
 İkinci işlem ise FTS ve onun bünyesindeki Saha Simülasyon (SS) modeli, Anklaşman Simülasyon (AS) modeli ve Trafik Simülasyon (TS) modelini ilgili senaryonun teknik parametrelerini veritabanından yüklemesi ve simülasyon başlatma durumu için hazırlanması.
-Simülasyon Running durumundayken SEL deki sıralanmış SE olaylar simülasyon zamanına göre FTS modülüne işlenmek için aktarılmaktadır. Bu mekanizma bir senaryonun müdahalesiz olarak işlenmesini sağlamaktadır. Ancak bir simülasyona ayrıca eğitmen tarafından müdahale edilmesine olanak vermektedir. Eğitimen, Eğitmen Saha Müdahale (ESM) aracı kullanarak manuel Saha Event yaratabilir. Bu manuel olarak yaratılan SE olaylar SM’ye anlık olarak iletdiğinde SE olayı SEL listesinin başına eklemektedir ve böylelikle simülasyon’un sonraki çevriminde hemen işlenmesi sağlanmaktadır. Bütün bu akış Şekil \ref{fig:smCommunicationDiagram}'deki diagramda gösterilmiştir.
+Simülasyon Running durumundayken SEL deki sıralanmış SE olaylar simülasyon zamanına göre FTS modülüne işlenmek için aktarılmaktadır. Bu mekanizma bir senaryonun müdahalesiz olarak işlenmesini sağlamaktadır. Ancak bir simülasyon ayrıca eğitmen tarafından müdahale edilmesine izin vermektedir. Eğitimen, Eğitmen Saha Müdahale (ESM) aracı kullanarak manuel Saha Event yaratabilir. Bu manuel olarak yaratılan SE olaylar SM’ye anlık olarak iletdiğinde SE olayı SEL listesinin başına eklemektedir ve böylelikle simülasyon’un sonraki çevriminde hemen işlenmesi sağlanmaktadır. Bütün bu akış Şekil \ref{fig:smCommunicationDiagram}'deki diagramda gösterilmiştir.
 
 \begin{figure}[h!]
   \centering
@@ -167,9 +173,9 @@ Simülasyon Running durumundayken SEL deki sıralanmış SE olaylar simülasyon 
 
 \subsubsection{SD Simülasyon Destek ve Mesajlaşma Modülü}
 
-Şekil \ref{fig:RepresentationSDDiagram}'de görüldüğü gibi Simülasyon Destek ve Mesajlaşma modülü proje içerisinde birbirinden fiziksel olarak bağımsızlar fakat haberleşme ve etkileşim içinde olan birimlerin birbirleri ile olan haberleşmesini birlikte sağlamaktadır.
+Şekil \ref{fig:RepresentationSDDiagram}'de görüldüğü gibi Simülasyon Destek ve Mesajlaşma modülü proje içerisinde birbirinden fiziksel olarak bağımsız fakat haberleşme ve etkileşim içinde olan birimlerin birbirleri ile olan haberleşmesini sağlamaktadır.
 Temel sunucu istemci mimarisi üzerine kurulmuş haberleşme modülü projeye özgü bağlantı kopukluğu kontrolü, tekil bağlantı özelliği, XML tabanlı mesaj kontrolü gibi özellikler eklenerek projeye özgü protokol kuralları çerçevesinde tasarlanmıştır.
-Mesajlaşma ve iletişimi sağlayacak olan ana modül iki modda çalışabilmektedir. Bu modalardan ilki Server yani sunucu mod iken diğer mod ise Client yani istemci modüldür. Sunucu modda çalıştırıldığında belirli bir bağlantı portu üzerinden haberleşmenin sağlandığı bu sistem diğer yani İstemci modda diğer sistemlerin bağlanmasını beklenmektedir. 
+Mesajlaşma ve iletişimi sağlayacak olan ana modül iki modda çalışabilmektedir. Bu modalardan ilki Server yani sunucu mod iken diğer mod ise Client yani istemci modüldür. Sunucu modda çalıştırıldığında belirli bir bağlatı portu üzerinden haberleşmenin sağlandığı bu sistem modda diğer yani İstemci modda diğer sistemlerin bağlanılması beklenmektedir. 
 
 \begin{figure}[h!]
   \centering
@@ -196,9 +202,9 @@ Mesajlaşma ve iletişimi sağlayacak olan ana modül iki modda çalışabilmekt
 
 \subsection{ÖK Öğrenci Konsolu}
 
-Öğrenci Konsolu (ÖK) bir Öğrenci Bilgisayarı (ÖBÜ) ve bir Sesli Haberleşme Cihazı (SHC) alt donanım bileşenlerden oluşmaktadır. ÖK’nin yapısı Şekil \ref{fig:ogrenci}'de gösterilmiştir.
-Öğrenci Bilgisayarı bilgisayar kasası, fare, klavye ve LCD ekran donanımlardan oluşmaktadır. Bilgisayar üzerinde Windows 7 işletim sistemi kuruludur. Öğrenci Konsol Yönetimi (ÖKY) yazılım modülü üst seviye modül olup konsolunun genel işlevlerinden sorumludur. Dispeçer arayüz uygulamasını KM Client (KMC) modülü gerçekleştirmektedir. Ekranların video görüntü kayıtları Video Kayıt Altyapı (VKA) modülü tarafından gerçekleştirilmektedir.
-Sesli Haberleşme Cihazı dispeçerin sesli iletişimini sağlamak için gerekli mikrofon, kulaklık veya telefon ahizesi ile donatılacaktır. Üzerinde çalışan Sesli Haberleşme Yazılım Modülü (SHY) eğitim amaçlarına uygun biçimde arama yapmayı, aranmayı destekleyecektir. 
+Öğrenci Konsolu (ÖK) bir Öğrenci Bilgisayarı (ÖBÜ) ve bir Sesli Haberleşme Cihazından (SHC) alt donanım bileşenlerden oluşmaktadır. ÖK’nin yapısı Şekil \ref{fig:ogrenci}'de gösterilmiştir.
+Öğrenci Bilgisayarı bilgisayar kasa, fare, klavye ve LCD ekran donanımlardan oluşmaktadır. Bilgisayar üzerinde Windows 7 işletim sistemi kuruludur. Öğrenci Konsol Yönetimi (ÖKY) yazılım modülü üst seviye modül olup konsolunun genel işlevlerinden sorumludur. Dispeçer arayüz uygulamasını KM Client (KMC) modülü gerçekleştiriyor. Ekranların video görüntü kayıtları Video Kayıt Altyapı (VKA) modülü tarafından gerçekleştiriliyor.
+Sesli Haberleşme Cihazı dispeçerin sesli iletişimini sağlamak için gerekli mikrofon, kulaklık veya telefon ahize ile donatılacaktır. Üzerinde çalışan Sesli Haberleşme Yazılım Modülü (SHY) eğitim amaçlarına uygun biçimde arama yapmayı, aranmayı destekleyecektir. 
 
 \begin{figure}[h!]
   \centering
@@ -213,32 +219,27 @@ Sesli Haberleşme Cihazı dispeçerin sesli iletişimini sağlamak için gerekli
 
 Geniş Ekran Konsolu (GEK) bir Geniş Ekran Bilgisayar Ünitesi (ÖBÜ) ve bir Geniş Ekran Duvar Ünitesi (GDÜ) donanım bileşenlerden oluşmaktadır.GEK’in yapısı Şekil 3 de gösterilmiştir.
 Geniş Ekran Bilgisayar Ünitesi (GBÜ) çok çıkışlı ekran kartı ile donatılmış olup, her çıkış Geniş Ekran Duvar ünitesinin birer ekranına bağlıdır. Bilgisayar üzerinde Geniş Ekran Konsol Yönetimi (GKY) yazılımı çalışmaktadır. Bu yazılım Dispeçer arayüz uygulaması olan KM Client (KMC), Video Kayıt Altyapı (VKA) ve Video Geri Oynatma Aracı (VGO) modüllerin çalıştırılması ve kontrol edilmesinden sorumludur.
-Geniş Ekran Duvar Ünitesi (GDÜ) iki satır dört sütün düzenine göre yerleştirilmiş 8 LCD ekranlık görüntüleme duvarıdır.
-Sesli Haberleşme Cihazı eğitmenin sesli iletişimini sağlamak için gerekli mikrofon, kulaklık veya telefon ahizesi ile donatılacaktır. Üzerinde çalışan Sesli Haberleşme Yazılım Modülü (SHY) eğitim amaçlarına uygun biçimde arama yapmayı, aranmayı destekleyecektir.
-Şekil \ref{fig:genisekranSonuc}'de geniş ekrana ait deney sonucundaki ekran görüntüsü görülmektedir.
+Sesli Haberleşme Cihazı eğitmenin sesli iletişimini sağlamak için gerekli mikrofon, kulaklık veya telefon ahize ile donatılacaktır. Üzerinde çalışan Sesli Haberleşme Yazılım Modülü (SHY) eğitim amaçlarına uygun biçimde arama yapmayı, aranmayı destekleyecektir.
+Şekil \ref{fig:genisekranSonuc}'de geniş ekrana ait deney sonucundaki ekran göüntüsü görülmektedir.
 
 
 \subsection{Eğitmen Konsolu}
 
-Eğitmen Konsolu (EK) bir Eğitmen Bilgisayar Ünitesi (EBÜ) ve bir Geniş Ekran Duvar Ünitesi (GDÜ) donanım bileşenlerden oluşmaktadır. EK’nin yapısı Şekil 4 de gösterilmiştir.
-Eğitmen Bilgisayar Ünitesi (EBÜ) kasa, fare, klavye ve LCD ekran donanımlardan oluşmaktadır. Bilgisayar üzerinde Windows 7 işletim sistemi kuruludur. Bilgisayar üzerinde Eğitmen Konsol Yönetimi (EKY) yazılımı çalışmaktadır. Bu yazılım  Eğitmen Simülasyon Yönetim (ESY), Eğitmen Saha Müdahale (ESM), ve Video Geri Oynatma (VGO) modüllerin çalıştırılması ve kontrol edilmesinden sorumludur.
- Şekil \ref{fig:egitmenSonuc}'de eğitmen paneli ile yapılan deneye ait ekran görüntüsü yer almaktadır.
+Eğitmen Konsolu (EK) simülasyon başlatıp simülasyona öğrenci ataması yapabilen ve seneryo atayan roldedir. Simülasyon anında simülasyona müdahele edebilmektedir. Simülasyonu durdurabilir devam ettirilebilir ve sonlandırabilir. Öğrenciden gelen taleplere onay verebilir. Snapshot alabilir. Şekil \ref{fig:egitmenSonuc}'de eğitmen paneli ile yapılan deneye ait ekran görüntüsü yer almaktadır.
 
 
 \subsection{SSÜ Simülasyon Sunucu Ünitesi}
 
-RAYTES projesinde tüm mesajlaşma koordinasyonu sağlamak amacıyla Simülasyon Sunucu Ünitesi uygulaması kullanılacaktır. Endüstriyel bir sunucu bilgisayarda koşmakta olan uygulama proje ekibi tarafından geliştirilmiştir. Uygulamanın temel işlevleri simülasyon bileşenleri arasında mesajlaşma senkronizasyonunu ve koordinasyonu sağlamak, sistemin çalışmasını tüm mesaj akışlarını görüntülemek, simülasyon altyapısını oluşturan diğer sunucu taraflı bileşenlerin ayağa kaldırılmasını sağlamak, simülasyon bileşenlerin bağlantı bilgilerini tutmak ve bunları diğer bileşenlerle paylaşmak gibi görevlerdir. Simülasyon sisteminin tüm aktif bileşenleri Simülasyon sunucusuna doğrudan ya da dolaylı olarak bağlı bulunacaktır.
-
+RAYTES projesinde tüm mesajlaşma koordinasyonu sağlamak amacıyla Simülasyon Sunucu Ünitesi uygulaması kullanılacaktır. Endüstriyel bir sunucu bilgisayarda koşacak uygulama proje ekibi tarafından geliştirilecektir. Uygulamanın temel işlevleri simülasyon bileşenleri arasında mesajlaşma senkronizasyonunu ve koordinasyonu sağlamak, sistemin çalışmasını tüm mesaj akışlarını görüntülemek, simülasyon altyapısını oluşturan diğer sunucu taraflı bileşenlerin ayağa kaldırılmasını sağlamak, simülasyon bileşenlerin bağlantı bilgilerini tutmak ve bunları diğer bileşenlerle paylaşmak gibi görevlerdir. Simülasyon sisteminin tüm aktif bileşenleri Simülasyon sunucusuna doğrudan ya da dolaylı olarak bağlı bulunacaktır.
 \subsection{Editör Analiz Konsolu}
 
-Editör Analiz Konsolu (EAK) bilgisayar kasa, fare, klavye ve LCD ekran donanımlardan oluşmaktadır. EAK’nin yapısı Şekil 7 da gösterilmiştir.
-Bilgisayar üzerinde Windows 7 işletim sistemi kurulu olup Senaryo Editör Aracı (SED), Performans Analiz Aracı (PA), Kullanıcı Yönetim Aracı (KYA), Öğrenci Eğitim Kayıtları Aracı (ÖEK) ve Video Geri Oynatma Aracı (VGO) yazılım modülleri çalışmaktadır.
+Bilgisayar üzerinde Windows 7 işletim sistemi kurulu olup Senaryo Editör Aracı (SED), Performans Analiz Aracı (PA), Kullanıcı Yönetim Aracı (KYA), Öğrenci Eğitim Kayıtları Aracı (ÖEK) ve Video Geri Oynatma Aracı (VGO) yazılım modüller çalışmaktadır.
 EAK simülasyon öncesi senaryoların hazırlanması, kullanıcıların tanımlanması, ve simülasyon sonrası eğitim performans analizi ve öğrenci eğitim kayıtlarını incelemek için kullanılmaktadır. Dolaysıyla bu konsol simülasyon eğitimi esnasında değil “off-line” kullanılmaya yöneliktir.
 
 \subsection{Train Graph}
 
 
-Raytes Projesi kapsamında geliştirilen Trengraf bileşeni, tren hareket kayıtlarının (TrainEvent) sorgulanarak grafik üzerinde çeşitli seçenekler ile gösterimini sağlayan güçlü bir veri analiz aracıdır.
+Raytes Projesi kapsamında geliştirilen Trengraf bileşeni, tren hareket kayıtlarının (TrainEvent) sorgulanarak grafik üzerinde çeşitli seçenekler ile gösterimini sağlayan bir veri analiz aracıdır.
 74 de örnek bir ekran görüntüsü verilmiştir. Sorgu sonucunda trenlerin bloklardan geçiş hareketleri rahatlıkla izlenebilmektedir. 
 
 

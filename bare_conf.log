@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.7.7)  18 APR 2016 15:00
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.7.7)  19 APR 2016 16:04
 entering extended mode
  %&-line parsing enabled.
 **bare_conf.tex
@@ -193,18 +193,18 @@ Package caption Info: subfigure package is loaded.
 ) (./bare_conf.aux)
 \openout1 = `bare_conf.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 -- Lines per column: 56 (exact).
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
@@ -1207,7 +1207,7 @@ Missing character: There is no ± in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¶ in font ptmr7t!
 
-Underfull \hbox (badness 2401) in paragraph at lines 104--105
+Underfull \hbox (badness 2401) in paragraph at lines 100--101
 \OT1/ptm/m/n/10 (KMS) modl StateMes-sage kul-lan-larak Kon-trol Merkezi
  []
 
@@ -1338,7 +1338,7 @@ Missing character: There is no § in font ptmr7t!
 Missing character: There is no Å in font ptmr7t!
 Missing character: There is no Ÿ in font ptmr7t!
 
-Underfull \hbox (badness 3281) in paragraph at lines 110--111
+Underfull \hbox (badness 3281) in paragraph at lines 106--107
 \OT1/ptm/m/n/10 zerinden ya-zlm modl-nden mo-dle iletilmek-te-dir. Kon-trol
  []
 
@@ -1581,9 +1581,9 @@ Missing character: There is no Ÿ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 121.
+(Font)              <7> on input line 117.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 121.
+(Font)              <5> on input line 117.
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
@@ -2487,7 +2487,7 @@ Missing character: There is no ± in font ptmr7t!
 Missing character: There is no Å in font ptmr7t!
 Missing character: There is no ž in font ptmr7t!
 
-LaTeX Warning: Reference `fig:ogrenci' on page 4 undefined on input line 209.
+LaTeX Warning: Reference `fig:ogrenci' on page 4 undefined on input line 205.
 
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¶ in font ptmr7t!
