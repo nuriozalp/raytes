@@ -47,39 +47,38 @@ Tren trafiği kontrol sistemleri çok kritik sistemlerdir.Anlık konum bilgisi e
 
 Bu çalışmada dispeçerlerin geliştirilen simülasyon sistemi altyapısı kullanılarak eğitilmesi ve gerçek tren trafiği yönetimine hazır hale getirilmesi ve daha kısa sürede alanında uzmanlaşabilmesi hedeflenmiştir. Simülasyon ortamında yoğun trafikli, farklı tip ve hızlardaki trenlerin bulunduğu demiryolu sahası oluşturularak bu saha üzerinde meydana gelebilecek problemler oluşturulmakta ve yapılan tüm bu işlemler senaryo olarak kaydedilmektedir. Kaydedilen senoryolar eğitmen tarafından açılarak aynı anda 5 öğrenciye kadar eğitim verilmesine ve sonrasında öğrencilerin performanslarının  değerlendirilerek karne verilmesine imkan sağlamaktadır.
 
+Geliştirilen simülasyon siteminde  Türkiye'deki 3 farklı tipteki gerçek tren hattı çizimleri yapılmışve  sisteme tanıtılmıştır. Bunlarda 1 tanesi hızlı Tren hattı, bir diğeri banliyo hattı ve sonuncusu geleneksel tren hattı ndan olşmaktadır. 3 farklı tipteki tren hattına ait karakterisitik farklılıklar kullanılarak öğrencilerin eğitilmesi halihazırdaki sistem tarafından gerçekleştirilmektedir.
+
 Geliştirilen simülasyon sistemi 5 modülden oluşmaktadır. 
 Bunlar; 
-. eğitmen konsolu, 
-. öğrenci konsolu, 
-. seneryo editörü, 
-. performans değerlendirme modülü,
-. tren graf modülüdür. 
+\begin{itemize}
+\item eğitmen konsolu,
+\item öğrenci konsolu, 
+\item seneryo editörü,
+\item performans değerlendirme modülü,
+\item tren graf modülüdür. 
+\end{itemize}
+
 
 Seneryo editörü ile istenilen arazi hazırlanmakta ve istenilen bütün koşullar bu arazide oluşturulmakta ve istediği kadar değişik konumlarda tren eklenebilmektedir. Eğitmen ister tek simülasyon isterse farklı 5 simülasyon aynı anda başlatabilmekte ve simülasyonlara müdahele edebilmektedir. İstediği zaman snapshot ile eğitimde bazı önemli gördüğü yerleri tekrar tekrar öğrencilere tecrübe ettirebilmektedir. Öğrenciler yetkileri ölçüsünde sorumlu olduğu alanda tren trafiğini yönetebilmekte ve meydana gelen arızaların çözümü için çalışmalar yapabilmektedir. Anlık tren hareketlerini aynı zamanda trengraf ile takip edebilmektedir. Eğitim sonunda değerlendirme yapılabilmekte ve yetiştirilen dispeçerin başarısı ölçülebilmektedir.
 
-2. bölümde related wwork, 3. bölümde sistemin nasıl haberleşme alt yapısı hakkında bilgi verilmiştir. 4. Bölümde sisteme ait 5 modülden bahsedilmiştir. 5. modülde yapılan deney hakkında bilgiler yer almaktadır. 6.  bölümde ise sonuç kısmına yer verilmiştir.
+2. bölümde related work ler anlatılmıştır, 3. bölümde sistemin haberleşme alt yapısı hakkında bilgi verilmiştir. 4. Bölümde sisteme ait 5 modülden bahsedilmiştir. 5. modülde yapılan deney hakkında bilgiler yer almaktadır. 6.  bölümde ise sonuç kısmına yer verilmiştir.
 
 
 \section{RELATED WORK}
 
-Tren trafiğini yöneten ve birden çok dispeçerin eğitim aldığı dağıtık yapılı simülasyonlar henüz yaygın olarak kullanılmaktadır. Bizim yaptığımız çalışmaya benzer çalışmalara bu bölümde yer verilmiştir.
+Tren trafiğini yöneten ve birden çok dispeçerin eğitim aldığı dağıtık yapılı simülasyonlar yaygın olarak kullanılmaktadır. Bizim yaptığımız çalışmaya benzer çalışmalara bu bölümde yer verilmiştir.
 
 In Middelkoop and his friend study is a simulator which which stands for Flexible Rail Infra Simulation of Operations (FRISO). It includes automatized  a simulation model by using a connection to database, editor including generator functions and the possibility to perform single and multiple (stochastic) simulation experiments. FRISO models include following elements  track layout, signalling system, route setting, and interlocking. Our system presents multiple screen of regions and to let five students to work at same or different simulation at the same time \cite{FRISO}.
-
- 
 
 
 In Baohua  and his friend's study is about  multi-train simulator. It is able to do  train performances assessment at the given railway lines, signal layouts optimization, energy-efficient operating strategies , in major terminals exploration of traffic bottlenecks, the evaluation of the reliability of scheduled timetables and train delay propagation. In multi-train simulation does these automatically, in our system dispatcher conduct them \cite{ICVES}.
 
 
-
-
 \section{SYSTEM DESIGN}
 \subsection{Simülasyon Yaşam Döngüsü}
 
-RAYTES sistemi beş bağımsız simülasyon ortamını eşzamanlı ve birbirinden bağımsız olarak yürütebilmektedir. Aşağıdaki gösterilen Şekil \ref{fig:simyasamdongusu}' deki yaşam döngüsü bir simülasyon ortamını temsil etmektedir. Sistem ilk çalıştırıldğında IDLE durumda bulunmaktadır. Bir senaryo sisteme yüklenerek simülasyon oturumu oluşturulduğunda LOADED durumuna geçilir. Bu durumda simülasyon başlangiç saatinde beklemekte olup, çalışmaya hazır haldedir. Simülasyon çalıştırıldığında RUNNING durumuna geçer, simülasyon saati ilerlemekte, simüle edilen nesneler zamana duyarlı biçimde işlenir, ve insan arayüzlerinde sistem ile kullanıcılar arası etkileşim gerçeklenmektedir. PAUSE durumunda simülasyon saati ve simülasyon işlemler geçici olarak durdurulur. PAUSE durumunda yine simülasyon RUNNING durumuna başlayabilir. Simülasyon sonlandırıldığında TERMINATED durumuna düşer ve simülasyon artık yeniden başlatılamaz.
-
-
+RAYTES sistemi beş bağımsız simülasyon ortamını eşzamanlı ve birbirinden bağımsız olarak yürütebilmektedir. Aşağıdaki gösterilen Şekil \ref{fig:simyasamdongusu}' deki yaşam döngüsü bir simülasyon ortamını temsil etmektedir. Sistem ilk çalıştırıldğında IDLE durumda bulunmaktadır. Bir senaryo sisteme yüklenerek simülasyon oturumu oluşturulduğunda LOADED durumuna geçilir. Bu durumda simülasyon başlangiç saatinde beklemekte olup, çalışmaya hazır haldedir. Simülasyon çalıştırıldığında RUNNING durumuna geçer. RUNNING durumunda simülasyon saati ilerlemekte, simüle edilen nesneler zamana duyarlı biçimde akmakta ve insan arayüzlerinde sistem ile kullanıcılar arası etkileşim gerçeklenmektedir. Simülasyonun herhangi bir zamanında duraksatılabilir, bu durumda simülasyon PAUSE durumuna geçer. PAUSE durumunda iken simülasyon saati ve simülasyon işlemler geçici olarak durdurulur. PAUSE durumunda yine simülasyon RUNNING durumuna başlayabilir. Simülasyon sonlandırıldığında TERMINATED durumuna düşer ve simülasyon artık yeniden başlatılamaz.
 
 
 \begin{figure}[h!]
@@ -97,7 +96,7 @@ RequestMessage mesaj türü Kontrol Merkezi Client (KMC) modülünün Kontrol Me
 
 \subsubsection{State Message}
 
-StateMessage mesajlar simülasyon çalışması esnasında sanal saha daki tanımlı elemanların durum bilgilerinin iletilmesi için kullanılmaktadır. Kontrol Merkezi Sunucu (KMS) modülü StateMessage kullanlarak Kontrol Merkezi Client (KMC) modülüne saha bilgilerini göndermektedir. Kontrol Merkezi Sunucu ayriyetten saha görüntüleme ihtiyacı duyan Geniş Ekran Konsolu (GEK) ve Eğitmen Saha Müdahale (ESM) modüllerine de StateMessage vasıtasıyla bilgi göndermektedir.
+StateMessage mesajlar simülasyon çalışması esnasında sanal sahadaki tanımlı elemanların durum bilgilerinin iletilmesi için kullanılmaktadır. Kontrol Merkezi Sunucu (KMS) modülü StateMessage kullanlarak Kontrol Merkezi Client (KMC) modülüne saha bilgilerini göndermektedir. Kontrol Merkezi Sunucu ayriyetten saha görüntüleme ihtiyacı duyan Geniş Ekran Konsolu (GEK) ve Eğitmen Saha Müdahale (ESM) modüllerine de StateMessage vasıtasıyla bilgi göndermektedir.
 
 \subsubsection{System Message}
 SystemMessage mesajlar Öğrenci Kontrol Yönetimi (ÖKY) ile Kontrol Merkezi Sunucu (KMS) modüller arası kullanılan mesajlaşmadır. Bu mesaj türü öğrenci kullanıcıların eğitim sistemine giriş (login) sağlamakta kullanılmaktadır.
@@ -119,11 +118,6 @@ SSY üzerine gelen herbir mesaj bir ön kontrolden geçirilerek mesaj ile ilgili
 \item Mesajın içeriği SSY ile ilgili ise SSY’den doğrudan cevap mesajı yollamak
 \item Mesajın hiyerarşik olarak göderilmesi gerekiyorsa bu hiyerarşinin sağlanması
 \end{itemize}
-
-
-
-
-
 
 \begin{figure}[h!]
   \centering
@@ -160,7 +154,7 @@ Simülasyon Motoru (SM) modülündeki Şekil \ref{fig:smgrafic}'de gösterilen a
 
 \subsubsection{Mesajlaşma}
 Simülasyon Sunucu Yönetimi (SSY) ilk başladığında 5 adet bağımsız Simülasyon Motoru (SM) proses yaratır. Bu SM proses’ler sayesinde 5 bağımsız simülasyon eşzamanlı olarak SSY tarafından kontrol edilmesine olanak sağlar. SSY SimulasyonMessage tür mesajarı SM ye aktarmaktadır. Bu tür mesajlar, simülasyon yükle, sümülasyon başlat tarzında üst seviye kontrol mesajlardır. SM bu mesajları Saha Trafik Yönetimi (FTS) simülasyon modüllerine iletmektedir. Simülasyon modülü bu mesajların gerektirdiği işlemleri tamamladığında SM’ye yanıt (olumlu veya olumsuz) vermektedir ve bu netice SSY ye geri bildirilmektedir.
-LoadSimulation mesajı genel örnek olarak ele alınırsa; bu mesaj SM tarafından alındığında iki işlem tetiklemektedir. Birincisi, senaryo da oynatılması gereken önceden programlanmış olaylar veritabanından okunuyor ve Saha Event List (SEL) listesine yüklenmektedir. Bu olayların her biri bir Saha Event (SE) olarak tanımlanmıştır. 
+LoadSimulation mesajı genel örnek olarak ele alınırsa; bu mesaj SM tarafından alındığında iki işlem tetiklemektedir. Birincisi, senaryo da oynatılması gereken önceden programlanmış olaylar veritabanından okunur ve Saha Event List (SEL) listesine yüklenmektedir. Bu olayların her biri bir Saha Event (SE) olarak tanımlanmıştır. 
 İkinci işlem ise FTS ve onun bünyesindeki Saha Simülasyon (SS) modeli, Anklaşman Simülasyon (AS) modeli ve Trafik Simülasyon (TS) modelini ilgili senaryonun teknik parametrelerini veritabanından yüklemesi ve simülasyon başlatma durumu için hazırlanması.
 Simülasyon Running durumundayken SEL deki sıralanmış SE olaylar simülasyon zamanına göre FTS modülüne işlenmek için aktarılmaktadır. Bu mekanizma bir senaryonun müdahalesiz olarak işlenmesini sağlamaktadır. Ancak bir simülasyon ayrıca eğitmen tarafından müdahale edilmesine izin vermektedir. Eğitimen, Eğitmen Saha Müdahale (ESM) aracı kullanarak manuel Saha Event yaratabilir. Bu manuel olarak yaratılan SE olaylar SM’ye anlık olarak iletdiğinde SE olayı SEL listesinin başına eklemektedir ve böylelikle simülasyon’un sonraki çevriminde hemen işlenmesi sağlanmaktadır. Bütün bu akış Şekil \ref{fig:smCommunicationDiagram}'deki diagramda gösterilmiştir.
 
@@ -232,7 +226,8 @@ Geniş Ekran Duvar Ünitesi (GDÜ) iki satır dört sütün düzenine göre yerl
 
 \subsection{SSÜ Simülasyon Sunucu Ünitesi}
 
-RAYTES projesinde tüm mesajlaşma koordinasyonu sağlamak amacıyla Simülasyon Sunucu Ünitesi uygulaması kullanılacaktır. Endüstriyel bir sunucu bilgisayarda koşacak uygulama proje ekibi tarafından geliştirilecektir. Uygulamanın temel işlevleri simülasyon bileşenleri arasında mesajlaşma senkronizasyonunu ve koordinasyonu sağlamak, sistemin çalışmasını tüm mesaj akışlarını görüntülemek, simülasyon altyapısını oluşturan diğer sunucu taraflı bileşenlerin ayağa kaldırılmasını sağlamak, simülasyon bileşenlerin bağlantı bilgilerini tutmak ve bunları diğer bileşenlerle paylaşmak gibi görevlerdir. Simülasyon sisteminin tüm aktif bileşenleri Simülasyon sunucusuna doğrudan ya da dolaylı olarak bağlı bulunacaktır.
+RAYTES projesinde tüm mesajlaşma koordinasyonu sağlamak amacıyla Simülasyon Sunucu Ünitesi uygulaması kullanılacaktır. Endüstriyel bir sunucu bilgisayarda koşmakta olan uygulama proje ekibi tarafından geliştirilmiştir. Uygulamanın temel işlevleri simülasyon bileşenleri arasında mesajlaşma senkronizasyonunu ve koordinasyonu sağlamak, sistemin çalışmasını tüm mesaj akışlarını görüntülemek, simülasyon altyapısını oluşturan diğer sunucu taraflı bileşenlerin ayağa kaldırılmasını sağlamak, simülasyon bileşenlerin bağlantı bilgilerini tutmak ve bunları diğer bileşenlerle paylaşmak gibi görevlerdir. Simülasyon sisteminin tüm aktif bileşenleri Simülasyon sunucusuna doğrudan ya da dolaylı olarak bağlı bulunacaktır.
+
 \subsection{Editör Analiz Konsolu}
 
 Editör Analiz Konsolu (EAK) bilgisayar kasa, fare, klavye ve LCD ekran donanımlardan oluşmaktadır. EAK’nin yapısı Şekil 7 da gösterilmiştir.
@@ -242,7 +237,7 @@ EAK simülasyon öncesi senaryoların hazırlanması, kullanıcıların tanımla
 \subsection{Train Graph}
 
 
-Raytes Projesi kapsamında geliştirilen Trengraf bileşeni, tren hareket kayıtlarının (TrainEvent) sorgulanarak grafik üzerinde çeşitli seçenekler ile gösterimini sağlayan bir veri analiz aracıdır.
+Raytes Projesi kapsamında geliştirilen Trengraf bileşeni, tren hareket kayıtlarının (TrainEvent) sorgulanarak grafik üzerinde çeşitli seçenekler ile gösterimini sağlayan güçlü bir veri analiz aracıdır.
 74 de örnek bir ekran görüntüsü verilmiştir. Sorgu sonucunda trenlerin bloklardan geçiş hareketleri rahatlıkla izlenebilmektedir. 
 
 
