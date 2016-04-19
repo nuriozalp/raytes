@@ -43,30 +43,47 @@ burcu burcu burcu
 
 \section{INTRODUCTION}
 Kara ve Demiryolu taşımacılığında önemli bir yeri bulunan tren, bir ya da birkaç lokomotif tarafından çekilen, itilen ve vagonlardan oluşan bir ulaşım aracıdır. Ulaşım ve taşımacılık anlanlarında trenlerin çok önemli bir yere sahip olduğu bilinen bir gerçektir. 
-Artan demiryolu trafiği sonucunda Dünya genelinde değişik trafik kontrol sistemleri geliştirilmiştir. Dünyada tren trafiği yönetim metotlarının farklı birçok merkezi tren trafik kontrol sistemleri vardır.
+Artan demiryolu trafiği sonucunda Dünya genelinde değişik trafik kontrol sistemleri geliştirilmiştir. Tren trafiği yönetim metotlarının dünyada birçok farklı merkezi tren trafik kontrol sistemleri vardır.
+
 
 Demiryolu trafiği yönetimi için kullanılan sistemler merkezi kontrol sistemleri olup, kontrolörler (dispeçer) tarafında idare edilmektedir.  Dispeçerlerin amaçları trenleri güvenle ve zamanında varması gereken hedeflere ulaştırmaktır.
 
+
 Tren trafiği kontrol sistemleri çok kritik sistemlerdir.Anlık konum bilgisi eski model trenlerde bilinmemektedir. Sinyalizasyon sistemleri sayesinde trenlerin yaklaşık konumları 3km civarında tahmin edilebilmektedir. Bu nedenle tren trafiği kritik olmaktadır. Son yıllarda dispeçer eğitimi sefer sayılarının artması ve tren yollarının artması ile daha da önem kazanmıştır. Dispeçerlerin gerçek tren trfiği üzerinde çalışarak tecrübe kazanmaları hemuzun zaman almakta hem de birtakım riskleri beraberinde getirmektedir. Bu nedenle eğitim simülasyon sistemlerine ihtiyaç duyulmaktadır ve birçok eğitim simulasyonu geliştirilmiştir. Özellikle kontrol merkezlerinde birden çok dipeçerin birlikte çalışmasından dolayı dağıtık yapılı ve birden çok kullanıcılı simulasyonlar önem kazanmıştır. Bu sayede tek bir simulasyonda hazırlanan yoğun trafikli senaryo ile birden çok dispeçerin birlikte tren trafiği yönetmesi ve birçok problemle başa çıkması önem arz etmektedir. 
+
 
 Bu çalışmada dispeçerlerin geliştirilen simülasyon sistemi altyapısı kullanılarak eğitilmesi ve gerçek tren trafiği yönetimine hazır hale getirilmesi ve daha kısa sürede alanında uzmanlaşabilmesi hedeflenmiştir. Simülasyon ortamında yoğun trafikli, farklı tip ve hızlardaki trenlerin bulunduğu demiryolu sahası oluşturularak bu saha üzerinde meydana gelebilecek problemler oluşturulmakta ve yapılan tüm bu işlemler senaryo olarak kaydedilmektedir. Kaydedilen senoryolar eğitmen tarafından açılarak aynı anda 5 öğrenciye kadar eğitim verilmesine ve sonrasında öğrencilerin performanslarının  değerlendirilerek karne verilmesine imkan sağlamaktadır.
 
+
+Geliştirilen simülasyon siteminde  Türkiye'deki 3 farklı tipteki gerçek tren hattı çizimleri yapılmışve  sisteme tanıtılmıştır. Bunlarda 1 tanesi hızlı Tren hattı, bir diğeri banliyo hattı ve sonuncusu geleneksel tren hattı ndan olşmaktadır. 3 farklı tipteki tren hattına ait karakterisitik farklılıklar kullanılarak öğrencilerin eğitilmesi halihazırdaki sistem tarafından gerçekleştirilmektedir.
+
+
 Geliştirilen simülasyon sistemi 5 modülden oluşmaktadır. 
 Bunlar; 
-. eğitmen konsolu, 
-. öğrenci konsolu, 
-. seneryo editörü, 
-. performans değerlendirme modülü,
-. tren graf modülüdür. 
+\begin{itemize}
+\item eğitmen konsolu,
+\item öğrenci konsolu, 
+\item seneryo editörü,
+\item performans değerlendirme modülü,
+\item tren graf modülüdür. 
+\end{itemize}
+
+
+
 
 Seneryo editörü ile istenilen arazi hazırlanmakta ve istenilen bütün koşullar bu arazide oluşturulmakta ve istediği kadar değişik konumlarda tren eklenebilmektedir. Eğitmen ister tek simülasyon isterse farklı 5 simülasyon aynı anda başlatabilmekte ve simülasyonlara müdahele edebilmektedir. İstediği zaman snapshot ile eğitimde bazı önemli gördüğü yerleri tekrar tekrar öğrencilere tecrübe ettirebilmektedir. Öğrenciler yetkileri ölçüsünde sorumlu olduğu alanda tren trafiğini yönetebilmekte ve meydana gelen arızaların çözümü için çalışmalar yapabilmektedir. Anlık tren hareketlerini aynı zamanda trengraf ile takip edebilmektedir. Eğitim sonunda değerlendirme yapılabilmekte ve yetiştirilen dispeçerin başarısı ölçülebilmektedir.
 
-2. bölümde related wwork, 3. bölümde sistemin nasıl haberleşme alt yapısı hakkında bilgi verilmiştir. 4. Bölümde sisteme ait 5 modülden bahsedilmiştir. 5. modülde yapılan deney hakkında bilgiler yer almaktadır. 6.  bölümde ise sonuç kısmına yer verilmiştir.
+
+2. bölümde related work ler anlatılmıştır, 3. bölümde sistemin haberleşme alt yapısı hakkında bilgi verilmiştir. 4. Bölümde sisteme ait 5 modülden bahsedilmiştir. 5. modülde yapılan deney hakkında bilgiler yer almaktadır. 6.  bölümde ise sonuç kısmına yer verilmiştir.
+
+
 
 
 \section{RELATED WORK}
 
-Tren trafiğini yöneten ve birden çok dispeçerin eğitim aldığı dağıtık yapılı simülasyonlar henüz yaygın olarak kullanılmaktadır. Bizim yaptığımız çalışmaya benzer çalışmalara bu bölümde yer verilmiştir.
+
+Tren trafiğini yöneten ve birden çok dispeçerin eğitim aldığı dağıtık yapılı simülasyonlar yaygın olarak kullanılmaktadır. Bizim yaptığımız çalışmaya benzer çalışmalara bu bölümde yer verilmiştir.
+
 
 In Middelkoop and his friend study is a simulator which which stands for Flexible Rail Infra Simulation of Operations (FRISO). It includes automatized  a simulation model by using a connection to database, editor including generator functions and the possibility to perform single and multiple (stochastic) simulation experiments. FRISO models include following elements  track layout, signalling system, route setting, and interlocking. Our system presents multiple screen of regions and to let five students to work at same or different simulation at the same time \cite{FRISO}.
 
