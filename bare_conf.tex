@@ -29,30 +29,28 @@ Email: {(nuri.ozalp, ahmet.basgoze, ozdemir.kavak, burcu.kalkan)}@tubitak.gov.tr
 \maketitle
 
 \begin{abstract}
-Computer Simulations can be considered as a powerful tools for learning such as analysing, designing, and interacting. Especially in the vital criticality level it has become more important tools such as train traffic simulation.
-The most important purpose of the train control system to prevent train collisions with other trains, keeping them in safe range.
+Computer Simulations can be considered as a powerful tool for learning such as analysing, designing, and interacting. Especially in the vital criticality level it has become more important tools such as train traffic simulation.
+The most important purpose of train control system is to prevent train collisions with other trains, keeping them in safe range.
 
-The purpose of this study is to provide train traffic control in a distributed simulation system. The system consists of an instructor five students and a scenario-editor. The system use real train route model located in Turkey.  During the simulation, dispatchers console can controls train traffic which have different  size and speed in system. Success in educational outcomes can be measured. Instructor console make decisions about the organization of teaching and learning 
-experiences, classroom management, and responses to 
-individual students. The user is able to monitor and track the progress of five targeted students throughout the course of the simulation.
+The purpose of this study is to provide train traffic control in a distributed simulation system. The system consists of an instructor, five students and a scenario-editor. The system use real train route model located in Turkey including three train line with over 50 stations and interlocking regions.  In our simulation environment, dispatchers can control train traffic which have different  complexity level Success of students in educational outcomes can be measured. Instructor console make decisions about the organization of teaching and learning experiences, classroom management, and responses to individual students. User is able to monitor and track the progress of five targeted students throughout the course of the simulation.
 
 \end{abstract}
 
 \section{INTRODUCTION}
-Kara ve Demiryolu taşımacılığında önemli bir yeri bulunan tren, bir ya da birkaç lokomotif tarafından çekilen, itilen ve vagonlardan oluşan bir ulaşım aracıdır. Ulaşım ve taşımacılık anlanlarında trenlerin çok önemli bir yere sahip olduğu bilinen bir gerçektir. 
-Artan demiryolu trafiği sonucunda Dünya genelinde değişik trafik kontrol sistemleri geliştirilmiştir. Dünyada tren trafiği yönetim metotlarının farklı birçok merkezi tren trafik kontrol sistemleri vardır.
+Kara ve Demiryolu taşımacılığında önemli bir yeri bulunan tren, bir ya da birkaç lokomotif tarafından çekilen, itilen ve vagonlardan oluşan bir ulaşım aracıdır. Ulaşım ve taşımacılık alanlarında trenlerin çok önemli bir yere sahip olduğu bilinen bir gerçektir. 
+Artan demiryolu trafiği sonucunda dünya genelinde değişik trafik kontrol sistemleri geliştirilmiştir. Dünyada tren trafiği yönetim metotlarının farklı birçok merkezi tren trafik kontrol sistemleri vardır.
 
 
 Demiryolu trafiği yönetimi için kullanılan sistemler merkezi kontrol sistemleri olup, kontrolörler (dispeçer) tarafından idare edilmektedir.  Dispeçerlerin amaçları trenleri güvenle ve zamanında varması gereken hedeflere ulaştırmaktır.
 
 
-Tren trafiği kontrol sistemleri çok kritik sistemlerdir. Anlık konum bilgisi eski model trenlerde bilinmemektedir. Sinyalizasyon sistemleri sayesinde trenlerin yaklaşık konumları 3km civarında tahmin edilebilmektedir. Bu nedenle tren trafiği kritik bir hal almaktadır. Son yıllarda dispeçer eğitimi, sefer sayılarının ve tren yollarının artması ile daha da önem kazanmıştır. Dispeçerlerin gerçek tren trafiği üzerinde çalışarak tecrübe kazanmaları hemu zun zaman almakta hem de birtakım riskleri beraberinde getirmektedir. Bu nedenle eğitim simülasyon sistemlerine ihtiyaç duyulmaktadır ve bu konuda birçok eğitim simulasyonu geliştirilmiştir. Özellikle kontrol merkezlerinde birden çok dipeçerin birlikte çalışması gerekliliğinden dolayı dağıtık yapılı ve birden çok kullanıcılı simulasyonlar önem kazanmıştır. Bu sayede tek bir simulasyonda hazırlanan yoğun trafikli senaryo ile birden çok dispeçerin birlikte tren trafiğini yönetmesi ve birçok problemle başa çıkabilmesi önem arz etmektedir. 
+Tren trafiği kontrol sistemleri çok kritik sistemlerdir. Anlık konum bilgisi konvansiyonel trenlerde bilinmemektedir. Sinyalizasyon sistemleri sayesinde trenlerin yaklaşık konumları 3km civarında tahmin edilebilmektedir. Bu nedenle tren trafiği kritik bir hal almaktadır. Son yıllarda dispeçer eğitimi, sefer sayılarının ve tren yollarının artması ile daha da önem kazanmıştır. Dispeçerlerin gerçek tren trafiği üzerinde çalışarak tecrübe kazanmaları hemu uzun zaman almakta hem de birtakım riskleri beraberinde getirmektedir. Bu nedenle eğitim simülasyon sistemlerine ihtiyaç duyulmaktadır ve bu konuda birçok eğitim simulasyonu geliştirilmiştir. Özellikle kontrol merkezlerinde birden çok dipeçerin birlikte çalışması gerekliliğinden dolayı dağıtık yapılı ve birden çok kullanıcılı simülasyonlar önem kazanmıştır. Bu sayede tek bir simulasyonda hazırlanan yoğun trafikli senaryo ile birden çok dispeçerin birlikte tren trafiğini yönetmesi ve birçok problemle başa çıkabilmesi önem arz etmektedir. 
 
 
-Bu çalışmada dispeçerlerin geliştirilen simülasyon sistemi altyapısını kullanılarak eğitilmesi, gerçek tren trafiği yönetimine hazır hale getirilmesi ve kısa sürede alanında uzmanlaşabilmesi amaçlanmıştır. Simülasyon ortamında yoğun trafikli, farklı tip ve hızlardaki trenlerin bulunduğu demiryolu sahası oluşturularak bu saha üzerinde makas, sinyal, ray arızası gibi meydana gelebilecek problemler oluşturulmakta ve yapılan tüm bu işlemler senaryo olarak kaydedilmektedir. Kaydedilen senoryolar eğitmen tarafından bir simülasyonda açılarak aynı anda 5 öğrenciye kadar eğitim verilmesine ve sonrasında öğrencilerin performansları gerçekleştirdikleri işlemler doğrultusunda değerlendirilerek karne verilmesine imkan sağlamaktadır.
+Bu çalışmada dispeçerlerin geliştirilen simülasyon sistemi altyapısını kullanılarak eğitilmesi, gerçek tren trafiği yönetimine hazır hale getirilmesi ve kısa sürede alanında uzmanlaşabilmesi amaçlanmıştır. Simülasyon ortamında yoğun trafikli, farklı tip ve hızlardaki trenlerin bulunduğu demiryolu sahası oluşturularak bu saha üzerinde makas, sinyal, ray, hemzemin geçit arızası gibi meydana gelebilecek problemler oluşturulmakta ve yapılan tüm bu işlemler senaryo olarak kaydedilmektedir. Kaydedilen senoryolar eğitmen tarafından bir simülasyonda açılarak aynı anda 5 öğrenciye kadar eğitim verilmesine ve sonrasında öğrencilerin performansları gerçekleştirdikleri işlemler doğrultusunda değerlendirilerek karne verilmesine imkan sağlamaktadır.
 
 
-Geliştirilen simülasyon siteminde  Türkiye'deki 3 farklı tipteki gerçek tren hattı çizimleri yapılmış ve sisteme tanıtılmıştır. Bunlarda 1 tanesi hızlı Tren hattı, bir diğeri banliyo hattı ve sonuncusu geleneksel tren hattı ndan olşmaktadır. 3 farklı tipteki tren hattına ait karakterisitik farklılıklar kullanılarak öğrencilerin eğitilmesi halihazırdaki sistem tarafından gerçekleştirilmektedir.
+Geliştirilen simülasyon siteminde Türkiye'deki 3 farklı tipteki gerçek tren hattı gerçeğine bağlı kalarak modellenmiş ve sisteme tanıtılmıştır. Bunlarda 1 tanesi hızlı tren hattı, bir diğeri banliyo hattı ve sonuncusu konvansiyonel tren hattından olşmaktadır. 3 farklı tipteki tren hattına ait karakterisitik farklılıklar kullanılarak öğrencilerin eğitilmesi halihazırdaki sistem tarafından gerçekleştirilmektedir.
 
 
 Geliştirilen simülasyon sistemi 5 modülden oluşmaktadır. 
@@ -65,7 +63,7 @@ Bunlar;
 \item tren graf modülüdür. 
 \end{itemize}
 
-
+Bunun dışında yardımcı araçlarda geliştirilmiştir. TrackDesigner aracı bunlardan en önemlisidir. Bu araç ile modellenecek anklaşman sahaları görsel olarak çizilmiş, saha gerçeğine uygun olarak modellenmiştir. TrackDesigner ile bir istasyondaki güzergahlar bulunmuş, sahanın fiziksel özellikleri modellenmiş(sinyal, makas gibi saha ekipmanlarının pozisyonlarının belirlenmesi), anklaşman tablolarının üretilmesi gerçekleştirilmiştir. Sistemin ihtiyaç duyduğu verilerin hemen hemen hepsi TrackDesigner kullanılarak üretilmiştir.
 
 
 Seneryo editörü ile istenilen arazi hazırlanmakta, farklı konumlara istenildiği kadar tren eklenebilmekte ve istenilen bütün koşullar bu arazide oluşturulmaktadır.Arazide oluşturulabilecek koşullar çarpışma, bölge zaman izni, deray, kırmızı sinyal ihlali, kırmızı geçiş, lokomotif arızası, tren/vagon kaçması, sinyal arızası, makas arızası, sürat tecavüzü, hemzemin geçit arızası gibi durumları içermektedir. Oluşturulan senaryo ile eğitmen ister tek simülasyon isterse farklı 5 simülasyon olarak aynı anda başlatabilmekte ve simülasyonlara müdahele edebilmektedir. İstediği zaman snapshot ile eğitimde bazı önemli gördüğü yerleri tekrar tekrar öğrencilere tecrübe ettirebilmektedir. Öğrenciler yetkileri ölçüsünde sorumlu olduğu alanda tren trafiğini yönetebilmekte ve meydana gelen arızaların çözümü için çalışmalar yapabilmektedir. Simülasyondaki trenlerin anlık hareketleri aynı zamanda trengraf ile takip edebilmektedir. Eğitim sonunda eğitmen öğrencilerin performansını ölçmek amaçlı değerlendirme yapılabilmekte ve yetiştirilen dispeçerin başarısı puanlama sistemi ve başarılı/başarısız olarak ölçülebilmektedir.
@@ -82,7 +80,7 @@ Seneryo editörü ile istenilen arazi hazırlanmakta, farklı konumlara istenild
 Tren trafiğini yöneten ve birden çok dispeçerin eğitim aldığı dağıtık yapılı simülasyonlar yaygın olarak kullanılmaktadır.Benzer çalışmalara bu bölümde yer verilmiştir.
 
 
-In Middelkoop and his friend study is a simulator which which stands for Flexible Rail Infra Simulation of Operations (FRISO). It includes automatized  a simulation model by using a connection to database, editor including generator functions and the possibility to perform single and multiple (stochastic) simulation experiments. FRISO models include following elements  track layout, signalling system, route setting, and interlocking. Our system presents multiple screen of regions and to let five students to work at same or different simulation at the same time \cite{FRISO}.
+In Middelkoop and his friend study is a simulator which stands for Flexible Rail Infra Simulation of Operations (FRISO). It includes automatized  a simulation model by using a connection to database, editor including generator functions and the possibility to perform single and multiple (stochastic) simulation experiments. FRISO models include following elements  track layout, signalling system, route setting, and interlocking. Our system presents multiple screen of regions and to let five students to work at same or different simulation at the same time \cite{FRISO}.
 
  
 
