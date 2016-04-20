@@ -95,7 +95,7 @@ In Baohua  and his friend's study is about  multi-train simulator. It is able to
 \section{SYSTEM DESIGN}
 \subsection{Simülasyon Yaşam Döngüsü}
 
-RAYTES sistemi beş bağımsız simülasyon ortamını eşzamanlı ve birbirinden bağımsız olarak yürütebilmektedir. Aşağıdaki gösterilen Şekil \ref{fig:simyasamdongusu}' deki yaşam döngüsü bir simülasyon ortamını temsil etmektedir. Sistem ilk çalıştırıldğında IDLE durumda bulunmaktadır. Bir senaryo sisteme yüklenerek simülasyon oturumu oluşturulduğunda LOADED durumuna geçilir. Bu durumda simülasyon başlangıç saatinde beklemekte olup, çalışmaya hazır haldedir. Simülasyon çalıştırıldığında RUNNING durumuna geçer. RUNNING durumunda simülasyon saati ilerlemekte, simüle edilen nesneler zamana duyarlı biçimde akmakta ve insan arayüzlerinde sistem ile kullanıcılar arası etkileşim gerçeklenmektedir. Simülasyon herhangi bir zamanında duraksatılabilir, bu durumda simülasyon PAUSE durumuna geçer. PAUSE durumunda iken simülasyon saati ve simülasyon işlemleri geçici olarak durdurulur. PAUSE durumunda yine simülasyon RUNNING durumuna başlayabilir. Simülasyon sonlandırıldığında TERMINATED durumuna düşer ve simülasyon artık yeniden başlatılamaz.
+RAYTES sistemi beş bağımsız simülasyon ortamını eşzamanlı ve birbirinden bağımsız olarak yürütebilmektedir. Aşağıdaki gösterilen Şekil \ref{fig:simyasamdongusu}' deki yaşam döngüsü bir simülasyon ortamını temsil etmektedir. Sistem ilk çalıştırıldığında IDLE durumda bulunmaktadır. Bir senaryo sisteme yüklenerek simülasyon oturumu oluşturulduğunda LOADED durumuna geçilir. Bu durumda simülasyon başlangıç saatinde beklemekte olup, çalışmaya hazır haldedir. Simülasyon çalıştırıldığında RUNNING durumuna geçer. RUNNING durumunda simülasyon saati ilerlemekte, simüle edilen nesneler zamana duyarlı biçimde akmakta ve insan arayüzlerinde sistem ile kullanıcılar arası etkileşim gerçeklenmektedir. Simülasyon herhangi bir zamanında duraksatılabilir, bu durumda simülasyon PAUSE durumuna geçer. PAUSE durumunda iken simülasyon saati ve simülasyon işlemleri geçici olarak durdurulur. PAUSE durumunda yine simülasyon RUNNING durumuna başlayabilir. Simülasyon sonlandırıldığında TERMINATED durumuna düşer ve simülasyon artık yeniden başlatılamaz.
 
 
 
@@ -109,7 +109,7 @@ RAYTES sistemi beş bağımsız simülasyon ortamını eşzamanlı ve birbirinde
 
 \subsection{Comminication}
 \subsubsection{ Simulation Message}
-Simulation Message mesaj türü simülasyon sistemin üst seviye kumanda ve kontrol merkezi mesajlaşma türüdür. Bu mesajlar Eğitmen Konsolu’nda üretilmektedir ve sistemin diğer bileşenlerine gönderilmektedir. Simülasyon’un yaratılması, duraklatılması, snapshot alınması, gibi temel simülasyon komutlarını içermektedir. Ayrıca simülasyondaki sanal saha nesnelerinin durumlarına müdahale etmek amacıyla bir takım özel müdahale komutları tanımlıdır. Mesaj komutları Tablo 1 de verilmektedir.
+Simulation Message mesaj türü simülasyon sistemin üst seviye kumanda ve kontrol merkezi mesajlaşma türüdür. Bu mesajlar Eğitmen Konsolu’nda üretilmektedir ve sistemin diğer bileşenlerine gönderilmektedir. Simülasyon’un yaratılması, duraklatılması, snapshot alınması, gibi temel simülasyon komutlarını içermektedir. Ayrıca simülasyondaki sanal saha nesnelerinin durumlarına müdahale etmek amacıyla bir takım özel müdahale komutları tanımlıdır. 
 \subsubsection{Request Message}
 RequestMessage mesaj türü Kontrol Merkezi Client (KMC) modülünün Kontrol Merkezi Sunucu (KMS) modülüne gönderilen komutları taşımaktadır. KMC ve KMS arasındaki protokol “client-server” mimarisi olup RequestMessage komutları istemci tarafın sunucu tarafından hizmet isteği olarak değerlendirilmektedir. RequestMessage komutları Tablo x te listelenmektedir.
 
@@ -118,10 +118,10 @@ RequestMessage mesaj türü Kontrol Merkezi Client (KMC) modülünün Kontrol Me
 StateMessage mesajlar simülasyon çalışması esnasında sanal saha daki tanımlı elemanların durum bilgilerinin iletilmesi için kullanılmaktadır. Kontrol Merkezi Sunucu (KMS) modülü StateMessage kullanlarak Kontrol Merkezi Client (KMC) modülüne saha bilgilerini göndermektedir. Kontrol Merkezi Sunucu ayriyetten saha görüntüleme ihtiyacı duyan Geniş Ekran Konsolu (GEK) ve Eğitmen Saha Müdahale (ESM) modüllerine de StateMessage vasıtasıyla bilgi göndermektedir.
 
 \subsubsection{System Message}
-SystemMessage mesajlar Öğrenci Kontrol Yönetimi (ÖKY) ile Kontrol Merkezi Sunucu (KMS) modüller arası kullanılan mesajlaşmadır. Bu mesaj türü öğrenci olarak eğitim sistemine dahil olmak isteyen kullanıcıların giriş (login) yapmasını sağlamakta kullanılmaktadır.
+SystemMessage mesajlar Öğrenci Kontrol Yönetimi (ÖKY) ile KMS modüller arası kullanılan mesajlaşmadır. Bu mesaj türü öğrenci olarak eğitim sistemine dahil olmak isteyen kullanıcıların giriş (login) yapmasını sağlamakta kullanılmaktadır.
 
 \subsection{Modbus}
-Modbus otomasyon sanayi çevrelerinde kabul görmüş bir ham veri iletişim protokoludür. Bu protokol “client-server” mantığında çalışıp sistemler arası bit dizilerin sorgulanması ve iletilmesinde kullanılmaktadır. RAYTES projesinde Modbus paketler UDP/IP üzerinden yazılım modülünden diğer modüllere iletilmektedir. Kontrol Merkezi Sunucu (KMS) modülü, Anklaşman Simülatör (AS) modülü, Saha Simülatör (SS) modülü ve Tren Simülatör (TS) modüller arası komut ve bilgi transferi Modbus paketler ile gerçekleşmektedir.
+Modbus otomasyon sanayi çevrelerinde kabul görmüş bir ham veri iletişim protokoludür. Bu protokol “client-server” mantığında çalışıp sistemler arası bit dizilerin sorgulanması ve iletilmesinde kullanılmaktadır. RAYTES projesinde Modbus paketler UDP/IP üzerinden yazılım modülünden diğer modüllere iletilmektedir. KMS modülü, Anklaşman Simülatör (AS) modülü, Saha Simülatör (SS) modülü ve Tren Simülatör (TS) modüller arası komut ve bilgi transferi Modbus paketler ile gerçekleşmektedir.
 
 
 \subsection{SSY Simülasyon Sunucu Yönetim Modülü}
@@ -177,9 +177,9 @@ Simülasyon Motoru (SM) modülündeki Şekil \ref{fig:smgrafic}'de gösterilen a
 
 
 \subsubsection{Mesajlaşma}
-Simülasyon Sunucu Yönetimi (SSY) ilk başladığında 5 adet bağımsız Simülasyon Motoru (SM) proses yaratır. Bu SM proses’ler sayesinde 5 bağımsız simülasyon eşzamanlı olarak SSY tarafından kontrol edilmesine olanak sağlar. SSY SimulasyonMessage tür mesajarı SM ye aktarmaktadır. Bu tür mesajlar, simülasyon yükle, sümülasyon başlat tarzında üst seviye kontrol mesajlarıdır. SM bu mesajları Saha Trafik Yönetimi (FTS) simülasyon modüllerine iletmektedir. Simülasyon modülü bu mesajların gerektirdiği işlemleri tamamladığında SM’ye yanıt (olumlu veya olumsuz) vermektedir ve bu netice SSY ye geri bildirilmektedir.
+SSY ilk başladığında 5 adet bağımsız SM proses yaratır. Bu SM proses’ler sayesinde 5 bağımsız simülasyon eşzamanlı olarak SSY tarafından kontrol edilmesine olanak sağlar. SSY SimulasyonMessage tür mesajarı SM ye aktarmaktadır. Bu tür mesajlar, simülasyon yükle, sümülasyon başlat tarzında üst seviye kontrol mesajlarıdır. SM bu mesajları Saha Trafik Yönetimi (FTS) simülasyon modüllerine iletmektedir. Simülasyon modülü bu mesajların gerektirdiği işlemleri tamamladığında SM’ye yanıt (olumlu veya olumsuz) vermektedir ve bu netice SSY ye geri bildirilmektedir.
 LoadSimulation mesajı genel örnek olarak ele alınırsa; bu mesaj SM tarafından alındığında iki işlem tetiklemektedir. Birincisi, senaryo da oynatılması gereken önceden programlanmış olaylar veritabanından okunuyor ve Saha Event List (SEL) listesine yüklenmektedir. Bu olayların her biri bir Saha Event (SE) olarak tanımlanmıştır. 
-İkinci işlem ise FTS ve onun bünyesindeki Saha Simülasyon (SS) modeli, Anklaşman Simülasyon (AS) modeli ve Trafik Simülasyon (TS) modelini ilgili senaryonun teknik parametrelerini veritabanından yüklemesi ve simülasyon başlatma durumu için hazırlanması.
+İkinci işlem ise FTS ve onun bünyesindeki Saha Simülasyon modeli, Anklaşman Simülasyon  modeli ve Trafik Simülasyon  modelini ilgili senaryonun teknik parametrelerini veritabanından yüklemesi ve simülasyon başlatma durumu için hazırlanması.
 Simülasyon Running durumundayken SEL deki sıralanmış SE olaylar simülasyon zamanına göre FTS modülüne işlenmek için aktarılmaktadır. Bu mekanizma bir senaryonun müdahalesiz olarak işlenmesini sağlamaktadır. Ancak bir simülasyona ayrıca eğitmen tarafından müdahale edilmesine olanak vermektedir. Eğitimen, Eğitmen Saha Müdahale (ESM) aracı kullanarak manuel Saha Event yaratabilir. Bu manuel olarak yaratılan SE olaylar SM’ye anlık olarak iletdiğinde SE olayı SEL listesinin başına eklemektedir ve böylelikle simülasyon’un sonraki çevriminde hemen işlenmesi sağlanmaktadır. Bütün bu akış Şekil \ref{fig:smCommunicationDiagram}'deki diagramda gösterilmiştir.
 
 \begin{figure}[h!]
@@ -221,7 +221,7 @@ Mesajlaşma ve iletişimi sağlayacak olan ana modül iki modda çalışabilmekt
 \subsection{ÖK Öğrenci Konsolu}
 
 Öğrenci Konsolu (ÖK) bir Öğrenci Bilgisayar Ünitesi (ÖBÜ) ve bir Sesli Haberleşme Cihazı (SHC) alt donanım bileşenlerini içermektedir. ÖK’nin yapısı Şekil \ref{fig:ogrenci}'de gösterilmiştir.
-Öğrenci Konsol Yönetimi (ÖKY) yazılım modülü üst seviye modül olup öğrenci konsolunun genel işlevlerinden sorumludur. Dispeçer arayüz uygulaması KM Client (KMC) modülü tarafından gerçekleştirmekte olup ekranların video görüntü kayıtları Video Kayıt Altyapı (VKA) modülü tarafından gerçekleştirilmektedir.
+Öğrenci Konsol Yönetimi (ÖKY) yazılım modülü üst seviye modül olup öğrenci konsolunun genel işlevlerinden sorumludur. Dispeçer arayüz uygulaması  KMC modülü tarafından gerçekleştirmekte olup ekranların video görüntü kayıtları Video Kayıt Altyapı (VKA) modülü tarafından gerçekleştirilmektedir.
 
 \begin{figure}[h!]
   \centering
@@ -243,7 +243,7 @@ Geniş Ekran Bilgisayar Ünitesi (GBÜ) çok çıkışlı ekran kartı ile donat
 
 \subsection{Eğitmen Konsolu}
 
-Eğitmen Konsolu (EK) simülasyon başlatıp simülasyona öğrenci ataması yapabilen ve seneryo atayan roldedir. Simülasyon anında simülasyona müdahele edebilmektedir. Simülasyonu durdurabilir devam ettirilebilir ve sonlandırabilir. Öğrenciden gelen taleplere onay verebilir. Snapshot alabilir. Şekil \ref{fig:egitmenSonuc}'de eğitmen paneli ile yapılan deneye ait ekran görüntüsü yer almaktadır.
+Eğitmen Konsolu (EK) simülasyon başlatıp simülasyona öğrenci ataması yapabilen ve seneryo atayan konsoldur. Simülasyon anında simülasyona müdahele edebilmektedir. Simülasyonu durdurabilir, devam ettirilebilir ve sonlandırabilir. Öğrenciden gelen taleplere onay verebilir. Snapshot alabilir. Sınav modunda anlık öğrenciden düşen geri dönüşleri notlandırabilir. Şekil \ref{fig:egitmenSonuc}'de eğitmen paneli ile yapılan deneye ait ekran görüntüsü yer almaktadır.
 
 
 \subsection{SSÜ Simülasyon Sunucu Ünitesi}
@@ -274,7 +274,7 @@ Bu seçeneklerin hangilerinin gösterileceği kullanıcı tarafından seçilebil
 Sesli Haberleşme Cihazı dispeçerin sesli iletişimini sağlamak için gerekli mikrofon, kulaklık veya telefon ahizesi ile donatılacak ve üzerinde çalışan Sesli Haberleşme Yazılım Modülü (SHY) eğitim amaçlarına uygun biçimde arama yapmayı, aranmayı destekleyecektir. 
 
 \section{EXPERIMENT RESULT}
-Geliştirdiğimiz dağıtık yapılı 5 öğrencinin aynı anda eğitim alabildiği RAYTES projemizin testini 2 farklı şekilde gerçekleştirdik. Bunlardan ilki 20 trenin bulunduğu bir senaryoda tek simülasyon oturumunda 5 kullanıcının yetkisi dahilinde 1 saatlik bir eğitim olarak planlandı. Yapılan eğitim sonucunda ilk testten elde edilen toplam RAM ve CPU kullanımı Şekil \ref{fig:hepsibir}'de gösterilmiştir
+Geliştirdiğimiz dağıtık yapılı simülasyon RAYTES projemiz 5 öğrencinin aynı anda eğitim alabildiği durumu 2 farklı şekilde testini gerçekleştirdik. Bunlardan ilki 5 trenin bulunduğu bir senaryoda tek simülasyon oturumunda 5 kullanıcının yetkisi dahilinde 1 saatlik bir eğitim olarak planlandı. Yapılan eğitim sonucunda ilk testten elde edilen toplam RAM ve CPU kullanımı Şekil \ref{fig:hepsibir}'de gösterilmiştir
 
 
 \begin{figure}[h!]
