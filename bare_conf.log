@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.7.7)  21 APR 2016 14:57
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.7.7)  21 APR 2016 14:58
 entering extended mode
  %&-line parsing enabled.
 **bare_conf.tex
@@ -491,44 +491,44 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 60.
+(Font)              <7> on input line 58.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 60.
+(Font)              <5> on input line 58.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 1515) in paragraph at lines 84--85
+Underfull \hbox (badness 1515) in paragraph at lines 82--83
 \T1/ptm/m/n/10 stands for Flex-i-ble Rail In-fra Sim-u-la-tion of Op-er-a-tions
 
  []
 
 
-Underfull \hbox (badness 6961) in paragraph at lines 97--98
+Underfull \hbox (badness 6961) in paragraph at lines 95--96
 \T1/ptm/m/n/10 or-tam^^Yn^^Y tem-sil et-mek-te-dir. Sis-tem ilk çal^^Y³t^^Yr^^Y
 ld^^Y§^^Ynda
  []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 97--98
+Underfull \hbox (badness 4254) in paragraph at lines 95--96
 \T1/ptm/m/n/10 bek-le-mekte olup, çal^^Y³-maya haz^^Yr haldedir. Simülasyon
  []
 
 <simyasamdongusu.jpg, id=9, 332.24126pt x 144.54pt>
 File: simyasamdongusu.jpg Graphic file (type jpg)
  <use simyasamdongusu.jpg>
-Underfull \hbox (badness 4013) in paragraph at lines 111--112
+Underfull \hbox (badness 4013) in paragraph at lines 109--110
 \T1/ptm/m/n/10 mesajla³ma türüdür. Bu mesajlar E§it-men Kon-solu'nda
  []
 
 
-Underfull \hbox (badness 2111) in paragraph at lines 120--121
+Underfull \hbox (badness 2111) in paragraph at lines 118--119
  \T1/ptm/m/it/10 4) Sys-tem Mes-sage: [][] \T1/ptm/m/n/10 Sys-temMes-sage mesaj
 lar Ö§renci
  []
 
 [2 <./simyasamdongusu.jpg>]
-Underfull \hbox (badness 3849) in paragraph at lines 127--132
+Underfull \hbox (badness 3849) in paragraph at lines 125--130
 \T1/ptm/m/n/10 gös-ter-ilmi³tir. Simülasyon ak^^Y³^^Y içerisinde do§ru-dan bir
  []
 
@@ -546,36 +546,36 @@ File: syygrafic.jpg Graphic file (type jpg)
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
  \T1/ptm/m/it/10 1) S^^Yn^^Yf Yap^^Ys^^Y: [][] \T1/ptm/m/n/10 Simülasyon Mo-tor
 u (SM)
  []
 
 
-Underfull \hbox (badness 3058) in paragraph at lines 167--168
+Underfull \hbox (badness 3058) in paragraph at lines 165--166
 \T1/ptm/m/n/10 mod-ülün-deki “ekil 4[]'de gös-ter-ilen ana s^^Yn^^Yf Sim-Mo-tor
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 \T1/ptm/m/n/10 s^^Yn^^Yf^^Yd^^Yr. Bu s^^Yn^^Yf Con-fig, Xm-lU-til-ity, Sa-haEve
 ntList,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 \T1/ptm/m/n/10 FT-Sim-Man-ager::FTSimMgr ve Com-mu-ni-ca-tor::Client
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 \T1/ptm/m/n/10 s^^Yn^^Yflar^^Y bünyesinde yarat^^Yp kul-lan-mak-tad^^Yr. FT-Sim
 -Mgr
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 \T1/ptm/m/n/10 Saha Trafik Simülasyon Yöne-timi (FTS) mod-ülünde
  []
 
@@ -595,23 +595,23 @@ File: RepresentationSDDiagram.jpg Graphic file (type jpg)
 File: SDDiagram.jpg Graphic file (type jpg)
  <use SDDiagram.jpg>
 
-LaTeX Warning: Reference `fig:ogrenci' on page 4 undefined on input line 222.
+LaTeX Warning: Reference `fig:ogrenci' on page 4 undefined on input line 220.
 
 [4 <./smCommunicationDiagram.jpg> <./RepresentationSDDiagram.jpg> <./SDDiagram.
 jpg>] <ogrenci.jpg, id=26, 4336.2pt x 903.375pt>
 File: ogrenci.jpg Graphic file (type jpg)
  <use ogrenci.jpg>
-Underfull \hbox (badness 1721) in paragraph at lines 245--246
+Underfull \hbox (badness 1721) in paragraph at lines 243--244
 \T1/ptm/m/n/10 ö§renci ata-mas^^Y ya-pa-bilen ve sen-eryo atayan kon-sol-dur.
  []
 
 
-Underfull \hbox (badness 3229) in paragraph at lines 250--251
+Underfull \hbox (badness 3229) in paragraph at lines 248--249
 \T1/ptm/m/n/10 niza-sy-onunu ve ko-or-di-nasy-onu gerçek-le³tirmek, sis-temin
  []
 
 
-Underfull \hbox (badness 2573) in paragraph at lines 250--251
+Underfull \hbox (badness 2573) in paragraph at lines 248--249
 \T1/ptm/m/n/10 kald^^Yr^^Yl-mas^^Yn^^Y sa§la-mak, simülasyon bile³en-lerin ba§l
 ant^^Y
  []
@@ -657,6 +657,9 @@ Before submitting the final camera ready copy, remember to:
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  3392 strings out of 495061
@@ -671,7 +674,7 @@ ve/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/typ
 e1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a
 .pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
 mf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bare_conf.pdf (6 pages, 9994114 bytes).
+Output written on bare_conf.pdf (6 pages, 9994116 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
