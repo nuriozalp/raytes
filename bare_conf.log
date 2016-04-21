@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.7.7)  21 APR 2016 14:58
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.7.7)  21 APR 2016 15:35
 entering extended mode
  %&-line parsing enabled.
 **bare_conf.tex
@@ -595,12 +595,15 @@ File: RepresentationSDDiagram.jpg Graphic file (type jpg)
 File: SDDiagram.jpg Graphic file (type jpg)
  <use SDDiagram.jpg>
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 LaTeX Warning: Reference `fig:ogrenci' on page 4 undefined on input line 220.
 
-[4 <./smCommunicationDiagram.jpg> <./RepresentationSDDiagram.jpg> <./SDDiagram.
-jpg>] <ogrenci.jpg, id=26, 4336.2pt x 903.375pt>
+<ogrenci.jpg, id=23, 4336.2pt x 903.375pt>
 File: ogrenci.jpg Graphic file (type jpg)
- <use ogrenci.jpg>
+ <use ogrenci.jpg> [4 <./smCommunicationDiagram.jpg> <./RepresentationSDDiagram
+.jpg>]
 Underfull \hbox (badness 1721) in paragraph at lines 243--244
 \T1/ptm/m/n/10 ö§renci ata-mas^^Y ya-pa-bilen ve sen-eryo atayan kon-sol-dur.
  []
@@ -622,22 +625,20 @@ File: hepsibir.png Graphic file (type png)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<hepsiayri.png, id=29, 1191.45125pt x 237.88875pt>
+[5 <./SDDiagram.jpg> <./ogrenci.jpg>]
+<hepsiayri.png, id=32, 1191.45125pt x 237.88875pt>
 File: hepsiayri.png Graphic file (type png)
  <use hepsiayri.png>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<trenGrapSonuc.jpg, id=30, 4143.48pt x 2330.7075pt>
+<trenGrapSonuc.jpg, id=33, 4143.48pt x 2330.7075pt>
 File: trenGrapSonuc.jpg Graphic file (type jpg)
  <use trenGrapSonuc.jpg>
-<egitmenSonuc.jpg, id=31, 4143.48pt x 2330.7075pt>
+<egitmenSonuc.jpg, id=34, 4143.48pt x 2330.7075pt>
 File: egitmenSonuc.jpg Graphic file (type jpg)
  <use egitmenSonuc.jpg>
-<genisekranSonuc.jpg, id=32, 4143.48pt x 2330.7075pt>
+<genisekranSonuc.jpg, id=35, 4143.48pt x 2330.7075pt>
 File: genisekranSonuc.jpg Graphic file (type jpg)
 
-<use genisekranSonuc.jpg> [5 <./ogrenci.jpg>]
+<use genisekranSonuc.jpg>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -657,9 +658,6 @@ Before submitting the final camera ready copy, remember to:
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  3392 strings out of 495061
@@ -674,7 +672,7 @@ ve/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/typ
 e1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a
 .pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
 mf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bare_conf.pdf (6 pages, 9994116 bytes).
+Output written on bare_conf.pdf (6 pages, 9994421 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
